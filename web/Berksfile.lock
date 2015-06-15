@@ -1,0 +1,7 @@
+DEPENDENCIES
+  web
+    path: .
+    metadata: true
+
+GRAPH
+  web (0.1.0)

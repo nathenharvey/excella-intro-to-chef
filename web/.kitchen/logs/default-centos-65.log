@@ -1,0 +1,1316 @@
+I, [2015-06-15T17:45:28.626830 #3465]  INFO -- default-centos-65: -----> Creating <default-centos-65>...
+I, [2015-06-15T17:45:28.758861 #3465]  INFO -- default-centos-65: Sending build context to Docker daemon  2.56 kB
+I, [2015-06-15T17:45:28.759402 #3465]  INFO -- default-centos-65: Sending build context to Docker daemon 
+I, [2015-06-15T17:45:28.762828 #3465]  INFO -- default-centos-65: Step 0 : FROM centos:centos6
+I, [2015-06-15T17:45:28.765769 #3465]  INFO -- default-centos-65:  ---> 70441cac1ed5
+I, [2015-06-15T17:45:28.766284 #3465]  INFO -- default-centos-65: Step 1 : RUN yum clean all
+I, [2015-06-15T17:45:29.001663 #3465]  INFO -- default-centos-65:  ---> Running in 1b941f1d70ae
+I, [2015-06-15T17:45:31.148256 #3465]  INFO -- default-centos-65: Loaded plugins: fastestmirror
+I, [2015-06-15T17:45:31.298388 #3465]  INFO -- default-centos-65: Cleaning repos: base extras updates
+I, [2015-06-15T17:45:31.299452 #3465]  INFO -- default-centos-65: Cleaning up Everything
+I, [2015-06-15T17:45:40.419456 #3465]  INFO -- default-centos-65:  ---> 05ff5704effa
+I, [2015-06-15T17:45:43.725726 #3465]  INFO -- default-centos-65: Removing intermediate container 1b941f1d70ae
+I, [2015-06-15T17:45:43.726404 #3465]  INFO -- default-centos-65: Step 2 : RUN yum install -y sudo openssh-server openssh-clients which curl
+I, [2015-06-15T17:45:43.891493 #3465]  INFO -- default-centos-65:  ---> Running in 8af634453610
+I, [2015-06-15T17:45:45.190839 #3465]  INFO -- default-centos-65: Loaded plugins: fastestmirror
+I, [2015-06-15T17:45:45.338226 #3465]  INFO -- default-centos-65: Setting up Install Process
+I, [2015-06-15T17:45:45.339906 #3465]  INFO -- default-centos-65: Determining fastest mirrors
+I, [2015-06-15T17:45:46.118133 #3465]  INFO -- default-centos-65:  * base: mirror.linux.duke.edu
+I, [2015-06-15T17:45:46.119567 #3465]  INFO -- default-centos-65:  * extras: mirror.cogentco.com
+I, [2015-06-15T17:45:46.120711 #3465]  INFO -- default-centos-65:  * updates: centos.mirror.constant.com
+I, [2015-06-15T17:45:53.840989 #3465]  INFO -- default-centos-65: Resolving Dependencies
+I, [2015-06-15T17:45:53.843389 #3465]  INFO -- default-centos-65: --> Running transaction check
+I, [2015-06-15T17:45:53.844546 #3465]  INFO -- default-centos-65: ---> Package curl.x86_64 0:7.19.7-37.el6_5.3 will be updated
+I, [2015-06-15T17:45:53.851241 #3465]  INFO -- default-centos-65: ---> Package curl.x86_64 0:7.19.7-40.el6_6.4 will be an update
+I, [2015-06-15T17:45:53.976056 #3465]  INFO -- default-centos-65: --> Processing Dependency: libcurl = 7.19.7-40.el6_6.4 for package: curl-7.19.7-40.el6_6.4.x86_64
+I, [2015-06-15T17:45:53.988567 #3465]  INFO -- default-centos-65: ---> Package openssh-clients.x86_64 0:5.3p1-104.el6_6.1 will be installed
+I, [2015-06-15T17:45:54.064227 #3465]  INFO -- default-centos-65: --> Processing Dependency: openssh = 5.3p1-104.el6_6.1 for package: openssh-clients-5.3p1-104.el6_6.1.x86_64
+I, [2015-06-15T17:45:54.067261 #3465]  INFO -- default-centos-65: --> Processing Dependency: libfipscheck.so.1()(64bit) for package: openssh-clients-5.3p1-104.el6_6.1.x86_64
+I, [2015-06-15T17:45:54.071013 #3465]  INFO -- default-centos-65: --> Processing Dependency: libedit.so.0()(64bit) for package: openssh-clients-5.3p1-104.el6_6.1.x86_64
+I, [2015-06-15T17:45:54.074563 #3465]  INFO -- default-centos-65: ---> Package openssh-server.x86_64 0:5.3p1-104.el6_6.1 will be installed
+I, [2015-06-15T17:45:54.136931 #3465]  INFO -- default-centos-65: --> Processing Dependency: libwrap.so.0()(64bit) for package: openssh-server-5.3p1-104.el6_6.1.x86_64
+I, [2015-06-15T17:45:54.140695 #3465]  INFO -- default-centos-65: ---> Package sudo.x86_64 0:1.8.6p3-15.el6 will be installed
+I, [2015-06-15T17:45:54.147575 #3465]  INFO -- default-centos-65: ---> Package which.x86_64 0:2.19-6.el6 will be installed
+I, [2015-06-15T17:45:54.180565 #3465]  INFO -- default-centos-65: --> Running transaction check
+I, [2015-06-15T17:45:54.181675 #3465]  INFO -- default-centos-65: ---> Package fipscheck-lib.x86_64 0:1.2.0-7.el6 will be installed
+I, [2015-06-15T17:45:54.205581 #3465]  INFO -- default-centos-65: --> Processing Dependency: /usr/bin/fipscheck for package: fipscheck-lib-1.2.0-7.el6.x86_64
+I, [2015-06-15T17:45:54.208443 #3465]  INFO -- default-centos-65: ---> Package libcurl.x86_64 0:7.19.7-37.el6_5.3 will be updated
+I, [2015-06-15T17:45:54.214990 #3465]  INFO -- default-centos-65: ---> Package libcurl.x86_64 0:7.19.7-40.el6_6.4 will be an update
+I, [2015-06-15T17:45:54.228999 #3465]  INFO -- default-centos-65: ---> Package libedit.x86_64 0:2.11-4.20080712cvs.1.el6 will be installed
+I, [2015-06-15T17:45:54.231327 #3465]  INFO -- default-centos-65: ---> Package openssh.x86_64 0:5.3p1-104.el6_6.1 will be installed
+I, [2015-06-15T17:45:54.243510 #3465]  INFO -- default-centos-65: ---> Package tcp_wrappers-libs.x86_64 0:7.6-57.el6 will be installed
+I, [2015-06-15T17:45:54.247464 #3465]  INFO -- default-centos-65: --> Running transaction check
+I, [2015-06-15T17:45:54.248398 #3465]  INFO -- default-centos-65: ---> Package fipscheck.x86_64 0:1.2.0-7.el6 will be installed
+I, [2015-06-15T17:45:54.817097 #3465]  INFO -- default-centos-65: --> Finished Dependency Resolution
+I, [2015-06-15T17:45:54.877689 #3465]  INFO -- default-centos-65: 
+I, [2015-06-15T17:45:54.877964 #3465]  INFO -- default-centos-65: Dependencies Resolved
+I, [2015-06-15T17:45:54.910123 #3465]  INFO -- default-centos-65: 
+I, [2015-06-15T17:45:54.910210 #3465]  INFO -- default-centos-65: ================================================================================
+I, [2015-06-15T17:45:54.910271 #3465]  INFO -- default-centos-65:  Package              Arch      Version                        Repository  Size
+I, [2015-06-15T17:45:54.910346 #3465]  INFO -- default-centos-65: ================================================================================
+I, [2015-06-15T17:45:54.910405 #3465]  INFO -- default-centos-65: Installing:
+I, [2015-06-15T17:45:54.910456 #3465]  INFO -- default-centos-65:  openssh-clients      x86_64    5.3p1-104.el6_6.1              updates    437 k
+I, [2015-06-15T17:45:54.910507 #3465]  INFO -- default-centos-65:  openssh-server       x86_64    5.3p1-104.el6_6.1              updates    321 k
+I, [2015-06-15T17:45:54.910559 #3465]  INFO -- default-centos-65:  sudo                 x86_64    1.8.6p3-15.el6                 base       704 k
+I, [2015-06-15T17:45:54.910611 #3465]  INFO -- default-centos-65:  which                x86_64    2.19-6.el6                     base        38 k
+I, [2015-06-15T17:45:54.910660 #3465]  INFO -- default-centos-65: Updating:
+I, [2015-06-15T17:45:54.910716 #3465]  INFO -- default-centos-65:  curl                 x86_64    7.19.7-40.el6_6.4              updates    194 k
+I, [2015-06-15T17:45:54.910805 #3465]  INFO -- default-centos-65: Installing for dependencies:
+I, [2015-06-15T17:45:54.910869 #3465]  INFO -- default-centos-65:  fipscheck            x86_64    1.2.0-7.el6                    base        14 k
+I, [2015-06-15T17:45:54.910922 #3465]  INFO -- default-centos-65:  fipscheck-lib        x86_64    1.2.0-7.el6                    base       8.3 k
+I, [2015-06-15T17:45:54.911041 #3465]  INFO -- default-centos-65:  libedit              x86_64    2.11-4.20080712cvs.1.el6       base        74 k
+I, [2015-06-15T17:45:54.911094 #3465]  INFO -- default-centos-65:  openssh              x86_64    5.3p1-104.el6_6.1              updates    272 k
+I, [2015-06-15T17:45:54.911145 #3465]  INFO -- default-centos-65:  tcp_wrappers-libs    x86_64    7.6-57.el6                     base        62 k
+I, [2015-06-15T17:45:54.911195 #3465]  INFO -- default-centos-65: Updating for dependencies:
+I, [2015-06-15T17:45:54.911245 #3465]  INFO -- default-centos-65:  libcurl              x86_64    7.19.7-40.el6_6.4              updates    166 k
+I, [2015-06-15T17:45:54.911320 #3465]  INFO -- default-centos-65: 
+I, [2015-06-15T17:45:54.911374 #3465]  INFO -- default-centos-65: Transaction Summary
+I, [2015-06-15T17:45:54.911423 #3465]  INFO -- default-centos-65: ================================================================================
+I, [2015-06-15T17:45:54.911473 #3465]  INFO -- default-centos-65: Install       9 Package(s)
+I, [2015-06-15T17:45:54.911534 #3465]  INFO -- default-centos-65: Upgrade       2 Package(s)
+I, [2015-06-15T17:45:54.929664 #3465]  INFO -- default-centos-65: Total download size: 2.2 M
+I, [2015-06-15T17:45:54.929821 #3465]  INFO -- default-centos-65: Downloading Packages:
+I, [2015-06-15T17:45:55.407681 #3465]  INFO -- default-centos-65: --------------------------------------------------------------------------------
+I, [2015-06-15T17:45:55.408766 #3465]  INFO -- default-centos-65: Total                                           4.6 MB/s | 2.2 MB     00:00     
+I, [2015-06-15T17:45:55.412093 #3465]  INFO -- default-centos-65: [91mwarning: [0m[91mrpmts_HdrFromFdno: Header V3 RSA/SHA1 Signature, key ID c105b9de: NOKEY
+I, [2015-06-15T17:45:55.413180 #3465]  INFO -- default-centos-65: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+I, [2015-06-15T17:45:55.429172 #3465]  INFO -- default-centos-65: [91mImporting GPG key 0xC105B9DE:
+I, [2015-06-15T17:45:55.429285 #3465]  INFO -- default-centos-65:  Userid : CentOS-6 Key (CentOS 6 Official Signing Key) <centos-6-key@centos.org>
+I, [2015-06-15T17:45:55.429341 #3465]  INFO -- default-centos-65:  Package: centos-release-6-6.el6.centos.12.2.x86_64 (@CentOS/$releasever)
+I, [2015-06-15T17:45:55.429391 #3465]  INFO -- default-centos-65:  From   : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+I, [2015-06-15T17:45:55.525475 #3465]  INFO -- default-centos-65: Running rpm_check_debug
+I, [2015-06-15T17:45:55.608324 #3465]  INFO -- default-centos-65: Running Transaction Test
+I, [2015-06-15T17:45:55.706173 #3465]  INFO -- default-centos-65: Transaction Test Succeeded
+I, [2015-06-15T17:45:55.839068 #3465]  INFO -- default-centos-65: Running Transaction
+I, [2015-06-15T17:45:55.843975 #3465]  INFO -- default-centos-65: [91mWarning: RPMDB altered outside of yum.
+I, [2015-06-15T17:45:56.700560 #3465]  INFO -- default-centos-65:   Installing : fipscheck-lib-1.2.0-7.el6.x86_64                            1/13 
+I, [2015-06-15T17:45:56.885756 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:57.019690 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:57.171503 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:57.279023 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:57.741089 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:58.109586 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:58.291687 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:58.710037 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:58.889204 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.002768 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.002921 #3465]  INFO -- default-centos-65: install-info: No such file or directory for /usr/share/info/which.info.gz
+I, [2015-06-15T17:45:59.114525 #3465]  INFO -- default-centos-65:   Cleanup    : curl-7.19.7-37.el6_5.3.x86_64                              12/13 
+I, [2015-06-15T17:45:59.241965 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.282044 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.315497 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.337091 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.354851 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.384496 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.413130 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.440445 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.467910 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.497584 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.527755 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.541817 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.544619 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.604685 #3465]  INFO -- default-centos-65:  
+I, [2015-06-15T17:45:59.604842 #3465]  INFO -- default-centos-65: 
+I, [2015-06-15T17:45:59.604902 #3465]  INFO -- default-centos-65: Installed:
+I, [2015-06-15T17:45:59.604958 #3465]  INFO -- default-centos-65:   openssh-clients.x86_64 0:5.3p1-104.el6_6.1                                    
+I, [2015-06-15T17:45:59.605050 #3465]  INFO -- default-centos-65:   openssh-server.x86_64 0:5.3p1-104.el6_6.1                                     
+I, [2015-06-15T17:45:59.605114 #3465]  INFO -- default-centos-65:   sudo.x86_64 0:1.8.6p3-15.el6                                                  
+I, [2015-06-15T17:45:59.605168 #3465]  INFO -- default-centos-65:   which.x86_64 0:2.19-6.el6                                                     
+I, [2015-06-15T17:45:59.605218 #3465]  INFO -- default-centos-65: 
+I, [2015-06-15T17:45:59.605267 #3465]  INFO -- default-centos-65: Dependency Installed:
+I, [2015-06-15T17:45:59.605318 #3465]  INFO -- default-centos-65:   fipscheck.x86_64 0:1.2.0-7.el6             fipscheck-lib.x86_64 0:1.2.0-7.el6 
+I, [2015-06-15T17:45:59.605368 #3465]  INFO -- default-centos-65:   libedit.x86_64 0:2.11-4.20080712cvs.1.el6  openssh.x86_64 0:5.3p1-104.el6_6.1 
+I, [2015-06-15T17:45:59.605419 #3465]  INFO -- default-centos-65:   tcp_wrappers-libs.x86_64 0:7.6-57.el6     
+I, [2015-06-15T17:45:59.605468 #3465]  INFO -- default-centos-65: 
+I, [2015-06-15T17:45:59.605543 #3465]  INFO -- default-centos-65: Updated:
+I, [2015-06-15T17:45:59.605599 #3465]  INFO -- default-centos-65:   curl.x86_64 0:7.19.7-40.el6_6.4                                               
+I, [2015-06-15T17:45:59.605649 #3465]  INFO -- default-centos-65: 
+I, [2015-06-15T17:45:59.605927 #3465]  INFO -- default-centos-65: Dependency Updated:
+I, [2015-06-15T17:45:59.605986 #3465]  INFO -- default-centos-65:   libcurl.x86_64 0:7.19.7-40.el6_6.4                                            
+I, [2015-06-15T17:45:59.607925 #3465]  INFO -- default-centos-65: Complete!
+I, [2015-06-15T17:46:11.738206 #3465]  INFO -- default-centos-65:  ---> 2599045cf4dc
+I, [2015-06-15T17:46:15.253955 #3465]  INFO -- default-centos-65: Removing intermediate container 8af634453610
+I, [2015-06-15T17:46:15.254521 #3465]  INFO -- default-centos-65: Step 3 : RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+I, [2015-06-15T17:46:15.417109 #3465]  INFO -- default-centos-65:  ---> Running in ed39625e4766
+I, [2015-06-15T17:46:16.801244 #3465]  INFO -- default-centos-65: Generating public/private rsa key pair.
+I, [2015-06-15T17:46:16.801803 #3465]  INFO -- default-centos-65: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+I, [2015-06-15T17:46:16.801876 #3465]  INFO -- default-centos-65: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+I, [2015-06-15T17:46:16.801959 #3465]  INFO -- default-centos-65: The key fingerprint is:
+I, [2015-06-15T17:46:16.802016 #3465]  INFO -- default-centos-65: d1:89:b7:77:74:af:44:f3:76:17:f3:7c:f7:59:79:40 root@d3b3edb1ab99
+I, [2015-06-15T17:46:16.802151 #3465]  INFO -- default-centos-65: The key's randomart image is:
+I, [2015-06-15T17:46:16.802208 #3465]  INFO -- default-centos-65: +--[ RSA 2048]----+
+I, [2015-06-15T17:46:16.802282 #3465]  INFO -- default-centos-65: |              E  |
+I, [2015-06-15T17:46:16.802334 #3465]  INFO -- default-centos-65: |         o . .   |
+I, [2015-06-15T17:46:16.802384 #3465]  INFO -- default-centos-65: |        o +   =o.|
+I, [2015-06-15T17:46:16.802439 #3465]  INFO -- default-centos-65: |         o . o **|
+I, [2015-06-15T17:46:16.802490 #3465]  INFO -- default-centos-65: |        S . . o.&|
+I, [2015-06-15T17:46:16.802539 #3465]  INFO -- default-centos-65: |           . o oX|
+I, [2015-06-15T17:46:16.802612 #3465]  INFO -- default-centos-65: |              ...|
+I, [2015-06-15T17:46:16.802670 #3465]  INFO -- default-centos-65: |                 |
+I, [2015-06-15T17:46:16.802721 #3465]  INFO -- default-centos-65: |                 |
+I, [2015-06-15T17:46:16.802937 #3465]  INFO -- default-centos-65: +-----------------+
+I, [2015-06-15T17:46:25.187936 #3465]  INFO -- default-centos-65:  ---> 37b35ea0f419
+I, [2015-06-15T17:46:28.730533 #3465]  INFO -- default-centos-65: Removing intermediate container ed39625e4766
+I, [2015-06-15T17:46:28.731331 #3465]  INFO -- default-centos-65: Step 4 : RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+I, [2015-06-15T17:46:28.941793 #3465]  INFO -- default-centos-65:  ---> Running in aac975d35466
+I, [2015-06-15T17:46:30.157234 #3465]  INFO -- default-centos-65: Generating public/private dsa key pair.
+I, [2015-06-15T17:46:30.157909 #3465]  INFO -- default-centos-65: Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+I, [2015-06-15T17:46:30.158006 #3465]  INFO -- default-centos-65: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+I, [2015-06-15T17:46:30.158061 #3465]  INFO -- default-centos-65: The key fingerprint is:
+I, [2015-06-15T17:46:30.158110 #3465]  INFO -- default-centos-65: 1a:f9:e2:1f:7a:04:69:b7:6c:90:74:59:68:0e:f6:19 root@d3b3edb1ab99
+I, [2015-06-15T17:46:30.158174 #3465]  INFO -- default-centos-65: The key's randomart image is:
+I, [2015-06-15T17:46:30.158229 #3465]  INFO -- default-centos-65: +--[ DSA 1024]----+
+I, [2015-06-15T17:46:30.158278 #3465]  INFO -- default-centos-65: |         +.      |
+I, [2015-06-15T17:46:30.158326 #3465]  INFO -- default-centos-65: |      + E        |
+I, [2015-06-15T17:46:30.158373 #3465]  INFO -- default-centos-65: |     o O o       |
+I, [2015-06-15T17:46:30.158420 #3465]  INFO -- default-centos-65: |      *.=        |
+I, [2015-06-15T17:46:30.158467 #3465]  INFO -- default-centos-65: |     .o=S.       |
+I, [2015-06-15T17:46:30.158538 #3465]  INFO -- default-centos-65: |       +=        |
+I, [2015-06-15T17:46:30.158588 #3465]  INFO -- default-centos-65: |      ooo        |
+I, [2015-06-15T17:46:30.158636 #3465]  INFO -- default-centos-65: |     . o..       |
+I, [2015-06-15T17:46:30.158682 #3465]  INFO -- default-centos-65: |      oo.        |
+I, [2015-06-15T17:46:30.158729 #3465]  INFO -- default-centos-65: +-----------------+
+I, [2015-06-15T17:46:38.536223 #3465]  INFO -- default-centos-65:  ---> e3def5222e49
+I, [2015-06-15T17:46:41.927136 #3465]  INFO -- default-centos-65: Removing intermediate container aac975d35466
+I, [2015-06-15T17:46:41.927714 #3465]  INFO -- default-centos-65: Step 5 : RUN useradd -d /home/kitchen -m -s /bin/bash kitchen
+I, [2015-06-15T17:46:42.117873 #3465]  INFO -- default-centos-65:  ---> Running in d6f5a5cb21fa
+I, [2015-06-15T17:46:51.019741 #3465]  INFO -- default-centos-65:  ---> 20210045054c
+I, [2015-06-15T17:46:54.473980 #3465]  INFO -- default-centos-65: Removing intermediate container d6f5a5cb21fa
+I, [2015-06-15T17:46:54.474112 #3465]  INFO -- default-centos-65: Step 6 : RUN echo kitchen:kitchen | chpasswd
+I, [2015-06-15T17:46:54.640843 #3465]  INFO -- default-centos-65:  ---> Running in 0e78249b5a32
+I, [2015-06-15T17:47:03.526140 #3465]  INFO -- default-centos-65:  ---> fbbd0897574f
+I, [2015-06-15T17:47:07.067167 #3465]  INFO -- default-centos-65: Removing intermediate container 0e78249b5a32
+I, [2015-06-15T17:47:07.067305 #3465]  INFO -- default-centos-65: Step 7 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+I, [2015-06-15T17:47:07.255840 #3465]  INFO -- default-centos-65:  ---> Running in 0c9b9a07320e
+I, [2015-06-15T17:47:16.208173 #3465]  INFO -- default-centos-65:  ---> 5c6cbaa51b65
+I, [2015-06-15T17:47:19.700335 #3465]  INFO -- default-centos-65: Removing intermediate container 0c9b9a07320e
+I, [2015-06-15T17:47:19.700496 #3465]  INFO -- default-centos-65: Step 8 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/kitchen
+I, [2015-06-15T17:47:19.890981 #3465]  INFO -- default-centos-65:  ---> Running in 5a6741521220
+I, [2015-06-15T17:47:28.772444 #3465]  INFO -- default-centos-65:  ---> 73bfbc1b344b
+I, [2015-06-15T17:47:32.451966 #3465]  INFO -- default-centos-65: Removing intermediate container 5a6741521220
+I, [2015-06-15T17:47:32.452519 #3465]  INFO -- default-centos-65: Successfully built 73bfbc1b344b
+I, [2015-06-15T17:47:32.746442 #3465]  INFO -- default-centos-65: 46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992
+I, [2015-06-15T17:47:33.780313 #3465]  INFO -- default-centos-65: [{
+I, [2015-06-15T17:47:33.780543 #3465]  INFO -- default-centos-65:     "Args": [
+I, [2015-06-15T17:47:33.780761 #3465]  INFO -- default-centos-65:  "-D",
+I, [2015-06-15T17:47:33.780877 #3465]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T17:47:33.780938 #3465]  INFO -- default-centos-65:  "UseDNS=no",
+I, [2015-06-15T17:47:33.781006 #3465]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T17:47:33.781079 #3465]  INFO -- default-centos-65:  "UsePAM=no",
+I, [2015-06-15T17:47:33.781206 #3465]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T17:47:33.781268 #3465]  INFO -- default-centos-65:  "PasswordAuthentication=yes",
+I, [2015-06-15T17:47:33.781335 #3465]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T17:47:33.781407 #3465]  INFO -- default-centos-65:  "UsePrivilegeSeparation=no",
+I, [2015-06-15T17:47:33.781465 #3465]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T17:47:33.781521 #3465]  INFO -- default-centos-65:  "PidFile=/tmp/sshd.pid"
+I, [2015-06-15T17:47:33.781569 #3465]  INFO -- default-centos-65:     ],
+I, [2015-06-15T17:47:33.781615 #3465]  INFO -- default-centos-65:     "Config": {
+I, [2015-06-15T17:47:33.781697 #3465]  INFO -- default-centos-65:  "AttachStderr": false,
+I, [2015-06-15T17:47:33.781758 #3465]  INFO -- default-centos-65:  "AttachStdin": false,
+I, [2015-06-15T17:47:33.781869 #3465]  INFO -- default-centos-65:  "AttachStdout": false,
+I, [2015-06-15T17:47:33.782165 #3465]  INFO -- default-centos-65:  "Cmd": [
+I, [2015-06-15T17:47:33.782291 #3465]  INFO -- default-centos-65:      "/usr/sbin/sshd",
+I, [2015-06-15T17:47:33.782390 #3465]  INFO -- default-centos-65:      "-D",
+I, [2015-06-15T17:47:33.782452 #3465]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T17:47:33.782569 #3465]  INFO -- default-centos-65:      "UseDNS=no",
+I, [2015-06-15T17:47:33.782670 #3465]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T17:47:33.782877 #3465]  INFO -- default-centos-65:      "UsePAM=no",
+I, [2015-06-15T17:47:33.782981 #3465]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T17:47:33.783096 #3465]  INFO -- default-centos-65:      "PasswordAuthentication=yes",
+I, [2015-06-15T17:47:33.783164 #3465]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T17:47:33.783262 #3465]  INFO -- default-centos-65:      "UsePrivilegeSeparation=no",
+I, [2015-06-15T17:47:33.783356 #3465]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T17:47:33.783471 #3465]  INFO -- default-centos-65:      "PidFile=/tmp/sshd.pid"
+I, [2015-06-15T17:47:33.783537 #3465]  INFO -- default-centos-65:  ],
+I, [2015-06-15T17:47:33.783635 #3465]  INFO -- default-centos-65:  "CpuShares": 0,
+I, [2015-06-15T17:47:33.783731 #3465]  INFO -- default-centos-65:  "Cpuset": "",
+I, [2015-06-15T17:47:33.783852 #3465]  INFO -- default-centos-65:  "Domainname": "",
+I, [2015-06-15T17:47:33.783928 #3465]  INFO -- default-centos-65:  "Entrypoint": null,
+I, [2015-06-15T17:47:33.784098 #3465]  INFO -- default-centos-65:  "Env": [
+I, [2015-06-15T17:47:33.784167 #3465]  INFO -- default-centos-65:      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+I, [2015-06-15T17:47:33.784285 #3465]  INFO -- default-centos-65:  ],
+I, [2015-06-15T17:47:33.784388 #3465]  INFO -- default-centos-65:  "ExposedPorts": {
+I, [2015-06-15T17:47:33.785573 #3465]  INFO -- default-centos-65:      "22/tcp": {}
+I, [2015-06-15T17:47:33.785647 #3465]  INFO -- default-centos-65:  },
+I, [2015-06-15T17:47:33.785728 #3465]  INFO -- default-centos-65:  "Hostname": "46b32ab65240",
+I, [2015-06-15T17:47:33.785821 #3465]  INFO -- default-centos-65:  "Image": "73bfbc1b344b",
+I, [2015-06-15T17:47:33.785885 #3465]  INFO -- default-centos-65:  "Memory": 0,
+I, [2015-06-15T17:47:33.785942 #3465]  INFO -- default-centos-65:  "MemorySwap": 0,
+I, [2015-06-15T17:47:33.786024 #3465]  INFO -- default-centos-65:  "NetworkDisabled": false,
+I, [2015-06-15T17:47:33.786084 #3465]  INFO -- default-centos-65:  "OnBuild": null,
+I, [2015-06-15T17:47:33.786141 #3465]  INFO -- default-centos-65:  "OpenStdin": false,
+I, [2015-06-15T17:47:33.786216 #3465]  INFO -- default-centos-65:  "PortSpecs": null,
+I, [2015-06-15T17:47:33.786280 #3465]  INFO -- default-centos-65:  "StdinOnce": false,
+I, [2015-06-15T17:47:33.786338 #3465]  INFO -- default-centos-65:  "Tty": false,
+I, [2015-06-15T17:47:33.786405 #3465]  INFO -- default-centos-65:  "User": "",
+I, [2015-06-15T17:47:33.786481 #3465]  INFO -- default-centos-65:  "Volumes": null,
+I, [2015-06-15T17:47:33.786544 #3465]  INFO -- default-centos-65:  "WorkingDir": ""
+I, [2015-06-15T17:47:33.786593 #3465]  INFO -- default-centos-65:     },
+I, [2015-06-15T17:47:33.786641 #3465]  INFO -- default-centos-65:     "Created": "2015-06-15T17:47:32.578245813Z",
+I, [2015-06-15T17:47:33.786738 #3465]  INFO -- default-centos-65:     "Driver": "devicemapper",
+I, [2015-06-15T17:47:33.786816 #3465]  INFO -- default-centos-65:     "ExecDriver": "lxc-1.0.6",
+I, [2015-06-15T17:47:33.786867 #3465]  INFO -- default-centos-65:     "HostConfig": {
+I, [2015-06-15T17:47:33.786942 #3465]  INFO -- default-centos-65:  "Binds": null,
+I, [2015-06-15T17:47:33.787005 #3465]  INFO -- default-centos-65:  "CapAdd": null,
+I, [2015-06-15T17:47:33.787062 #3465]  INFO -- default-centos-65:  "CapDrop": null,
+I, [2015-06-15T17:47:33.787122 #3465]  INFO -- default-centos-65:  "ContainerIDFile": "",
+I, [2015-06-15T17:47:33.813473 #3465]  INFO -- default-centos-65:  "Devices": [],
+I, [2015-06-15T17:47:33.813550 #3465]  INFO -- default-centos-65:  "Dns": null,
+I, [2015-06-15T17:47:33.813616 #3465]  INFO -- default-centos-65:  "DnsSearch": null,
+I, [2015-06-15T17:47:33.813700 #3465]  INFO -- default-centos-65:  "Links": null,
+I, [2015-06-15T17:47:33.813821 #3465]  INFO -- default-centos-65:  "LxcConf": [],
+I, [2015-06-15T17:47:33.813893 #3465]  INFO -- default-centos-65:  "NetworkMode": "bridge",
+I, [2015-06-15T17:47:33.813952 #3465]  INFO -- default-centos-65:  "PortBindings": {
+I, [2015-06-15T17:47:33.814009 #3465]  INFO -- default-centos-65:      "22/tcp": [
+I, [2015-06-15T17:47:33.814085 #3465]  INFO -- default-centos-65:          {
+I, [2015-06-15T17:47:33.814150 #3465]  INFO -- default-centos-65:              "HostIp": "",
+I, [2015-06-15T17:47:33.814350 #3465]  INFO -- default-centos-65:              "HostPort": ""
+I, [2015-06-15T17:47:33.814415 #3465]  INFO -- default-centos-65:          }
+I, [2015-06-15T17:47:33.814493 #3465]  INFO -- default-centos-65:      ]
+I, [2015-06-15T17:47:33.814562 #3465]  INFO -- default-centos-65:  },
+I, [2015-06-15T17:47:33.814648 #3465]  INFO -- default-centos-65:  "Privileged": false,
+I, [2015-06-15T17:47:33.814714 #3465]  INFO -- default-centos-65:  "PublishAllPorts": false,
+I, [2015-06-15T17:47:33.814825 #3465]  INFO -- default-centos-65:  "RestartPolicy": {
+I, [2015-06-15T17:47:33.814892 #3465]  INFO -- default-centos-65:      "MaximumRetryCount": 0,
+I, [2015-06-15T17:47:33.814950 #3465]  INFO -- default-centos-65:      "Name": ""
+I, [2015-06-15T17:47:33.815005 #3465]  INFO -- default-centos-65:  },
+I, [2015-06-15T17:47:33.815082 #3465]  INFO -- default-centos-65:  "VolumesFrom": null
+I, [2015-06-15T17:47:33.815136 #3465]  INFO -- default-centos-65:     },
+I, [2015-06-15T17:47:33.815185 #3465]  INFO -- default-centos-65:     "HostnamePath": "/var/lib/docker/containers/46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992/hostname",
+I, [2015-06-15T17:47:33.815235 #3465]  INFO -- default-centos-65:     "HostsPath": "/var/lib/docker/containers/46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992/hosts",
+I, [2015-06-15T17:47:33.815283 #3465]  INFO -- default-centos-65:     "Id": "46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992",
+I, [2015-06-15T17:47:33.815330 #3465]  INFO -- default-centos-65:     "Image": "73bfbc1b344b55e95e9970436a785c3bf6115c54ad766960277c8521fdae0fe7",
+I, [2015-06-15T17:47:33.815378 #3465]  INFO -- default-centos-65:     "MountLabel": "",
+I, [2015-06-15T17:47:33.815591 #3465]  INFO -- default-centos-65:     "Name": "/cocky_feynman",
+I, [2015-06-15T17:47:33.815647 #3465]  INFO -- default-centos-65:     "NetworkSettings": {
+I, [2015-06-15T17:47:33.815704 #3465]  INFO -- default-centos-65:  "Bridge": "docker0",
+I, [2015-06-15T17:47:33.815761 #3465]  INFO -- default-centos-65:  "Gateway": "172.17.42.1",
+I, [2015-06-15T17:47:33.815839 #3465]  INFO -- default-centos-65:  "IPAddress": "172.17.0.10",
+I, [2015-06-15T17:47:33.815930 #3465]  INFO -- default-centos-65:  "IPPrefixLen": 16,
+I, [2015-06-15T17:47:33.815993 #3465]  INFO -- default-centos-65:  "PortMapping": null,
+I, [2015-06-15T17:47:33.816053 #3465]  INFO -- default-centos-65:  "Ports": {
+I, [2015-06-15T17:47:33.816110 #3465]  INFO -- default-centos-65:      "22/tcp": [
+I, [2015-06-15T17:47:33.816190 #3465]  INFO -- default-centos-65:          {
+I, [2015-06-15T17:47:33.816251 #3465]  INFO -- default-centos-65:              "HostIp": "0.0.0.0",
+I, [2015-06-15T17:47:33.816308 #3465]  INFO -- default-centos-65:              "HostPort": "49153"
+I, [2015-06-15T17:47:33.816364 #3465]  INFO -- default-centos-65:          }
+I, [2015-06-15T17:47:33.816444 #3465]  INFO -- default-centos-65:      ]
+I, [2015-06-15T17:47:33.816643 #3465]  INFO -- default-centos-65:  }
+I, [2015-06-15T17:47:33.816694 #3465]  INFO -- default-centos-65:     },
+I, [2015-06-15T17:47:33.816741 #3465]  INFO -- default-centos-65:     "Path": "/usr/sbin/sshd",
+I, [2015-06-15T17:47:33.816805 #3465]  INFO -- default-centos-65:     "ProcessLabel": "",
+I, [2015-06-15T17:47:33.816857 #3465]  INFO -- default-centos-65:     "ResolvConfPath": "/var/lib/docker/containers/46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992/resolv.conf",
+I, [2015-06-15T17:47:33.816915 #3465]  INFO -- default-centos-65:     "State": {
+I, [2015-06-15T17:47:33.816987 #3465]  INFO -- default-centos-65:  "ExitCode": 0,
+I, [2015-06-15T17:47:33.817045 #3465]  INFO -- default-centos-65:  "FinishedAt": "0001-01-01T00:00:00Z",
+I, [2015-06-15T17:47:33.817102 #3465]  INFO -- default-centos-65:  "Paused": false,
+I, [2015-06-15T17:47:33.817177 #3465]  INFO -- default-centos-65:  "Pid": 4719,
+I, [2015-06-15T17:47:33.817239 #3465]  INFO -- default-centos-65:  "Restarting": false,
+I, [2015-06-15T17:47:33.817296 #3465]  INFO -- default-centos-65:  "Running": true,
+I, [2015-06-15T17:47:33.817352 #3465]  INFO -- default-centos-65:  "StartedAt": "2015-06-15T17:47:33.66396396Z"
+I, [2015-06-15T17:47:33.817400 #3465]  INFO -- default-centos-65:     },
+I, [2015-06-15T17:47:33.817446 #3465]  INFO -- default-centos-65:     "Volumes": {},
+I, [2015-06-15T17:47:33.817517 #3465]  INFO -- default-centos-65:     "VolumesRW": {}
+I, [2015-06-15T17:47:33.817567 #3465]  INFO -- default-centos-65: }
+I, [2015-06-15T17:47:33.910725 #3465]  INFO -- default-centos-65: Finished creating <default-centos-65> (2m5.28s).
+I, [2015-06-15T17:49:55.222029 #4807]  INFO -- default-centos-65: -----> Converging <default-centos-65>...
+I, [2015-06-15T17:49:55.223328 #4807]  INFO -- default-centos-65: Preparing files for transfer
+I, [2015-06-15T17:49:55.223465 #4807]  INFO -- default-centos-65: Preparing dna.json
+I, [2015-06-15T17:49:55.224058 #4807]  INFO -- default-centos-65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-06-15T17:49:59.356014 #4807]  INFO -- default-centos-65: Removing non-cookbook files before transfer
+I, [2015-06-15T17:49:59.382690 #4807]  INFO -- default-centos-65: Preparing validation.pem
+I, [2015-06-15T17:49:59.384312 #4807]  INFO -- default-centos-65: Preparing client.rb
+I, [2015-06-15T17:49:59.642765 #4807]  INFO -- default-centos-65: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-06-15T17:49:59.642968 #4807]  INFO -- default-centos-65: downloading https://www.chef.io/chef/install.sh
+I, [2015-06-15T17:49:59.643082 #4807]  INFO -- default-centos-65:   to file /tmp/install.sh
+I, [2015-06-15T17:49:59.644388 #4807]  INFO -- default-centos-65: trying curl...
+I, [2015-06-15T17:49:59.954206 #4807]  INFO -- default-centos-65:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+I, [2015-06-15T17:49:59.954396 #4807]  INFO -- default-centos-65:                           Dload  Upload   Total   Spent    Left  Speed
+I, [2015-06-15T17:49:59.986209 #4807]  INFO -- default-centos-65: -- --:--:--     0100 18716  100 18716    0     0  70460      0 --:--:-- --:--:-- --:--:--  571k
+I, [2015-06-15T17:50:00.153606 #4807]  INFO -- default-centos-65: Downloading Chef  for el...
+I, [2015-06-15T17:50:00.155347 #4807]  INFO -- default-centos-65: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
+I, [2015-06-15T17:50:00.155423 #4807]  INFO -- default-centos-65:   to file /tmp/install.sh.22/metadata.txt
+I, [2015-06-15T17:50:00.157213 #4807]  INFO -- default-centos-65: trying curl...
+I, [2015-06-15T17:50:00.408589 #4807]  INFO -- default-centos-65: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.3.0-1.el6.x86_64.rpm
+I, [2015-06-15T17:50:00.408728 #4807]  INFO -- default-centos-65: md5	c19fefcb3d033107e9fbdb3839312584
+I, [2015-06-15T17:50:00.408815 #4807]  INFO -- default-centos-65: sha256	4b7c846a9ad93564cc203a5ac99890431f7d6ad159c424aa89827fd772c9881d
+I, [2015-06-15T17:50:00.419221 #4807]  INFO -- default-centos-65: downloaded metadata file looks valid...
+I, [2015-06-15T17:50:00.487603 #4807]  INFO -- default-centos-65: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.3.0-1.el6.x86_64.rpm
+I, [2015-06-15T17:50:00.487761 #4807]  INFO -- default-centos-65:   to file /tmp/install.sh.22/chef-12.3.0-1.el6.x86_64.rpm
+I, [2015-06-15T17:50:00.489294 #4807]  INFO -- default-centos-65: trying curl...
+I, [2015-06-15T17:50:03.002644 #4807]  INFO -- default-centos-65: Comparing checksum with sha256sum...
+I, [2015-06-15T17:50:03.978725 #4807]  INFO -- default-centos-65: 
+I, [2015-06-15T17:50:03.978905 #4807]  INFO -- default-centos-65: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-06-15T17:50:03.978964 #4807]  INFO -- default-centos-65: 
+I, [2015-06-15T17:50:03.979017 #4807]  INFO -- default-centos-65: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-06-15T17:50:03.980378 #4807]  INFO -- default-centos-65: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-06-15T17:50:03.980452 #4807]  INFO -- default-centos-65: be upgraded without warning on new releases, even to new major releases.
+I, [2015-06-15T17:50:03.980506 #4807]  INFO -- default-centos-65: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-06-15T17:50:03.980557 #4807]  INFO -- default-centos-65: CI/CD environments.
+I, [2015-06-15T17:50:03.980629 #4807]  INFO -- default-centos-65: 
+I, [2015-06-15T17:50:03.980679 #4807]  INFO -- default-centos-65: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-06-15T17:50:03.980728 #4807]  INFO -- default-centos-65: 
+I, [2015-06-15T17:50:03.980798 #4807]  INFO -- default-centos-65: Installing Chef 
+I, [2015-06-15T17:50:03.980855 #4807]  INFO -- default-centos-65: installing with rpm...
+I, [2015-06-15T17:50:04.189694 #4807]  INFO -- default-centos-65: warning: /tmp/install.sh.22/chef-12.3.0-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-06-15T17:50:04.771578 #4807]  INFO -- default-centos-65: Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)#########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+I, [2015-06-15T17:50:17.437827 #4807]  INFO -- default-centos-65:    1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)########################################### ( 99%)########################################### [100%]
+I, [2015-06-15T17:50:20.130643 #4807]  INFO -- default-centos-65: Thank you for installing Chef!
+I, [2015-06-15T17:50:20.353575 #4807]  INFO -- default-centos-65: Transferring files to <default-centos-65>
+I, [2015-06-15T17:50:24.645671 #4807]  INFO -- default-centos-65: Starting Chef Client, version 12.3.0
+I, [2015-06-15T17:50:28.074622 #4807]  INFO -- default-centos-65: Creating a new client identity for default-centos-65 using the validator key.
+I, [2015-06-15T17:50:28.904665 #4807]  INFO -- default-centos-65: [2015-06-15T18:50:28+01:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-06-15T17:50:28.945812 #4807]  INFO -- default-centos-65: [2015-06-15T18:50:28+01:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-06-15T17:50:28.957258 #4807]  INFO -- default-centos-65: resolving cookbooks for run list: ["web::default"]
+I, [2015-06-15T17:50:28.960208 #4807]  INFO -- default-centos-65: [2015-06-15T18:50:28+01:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-06-15T17:50:29.028568 #4807]  INFO -- default-centos-65: Synchronizing Cookbooks:
+I, [2015-06-15T17:50:29.067237 #4807]  INFO -- default-centos-65:   - web
+I, [2015-06-15T17:50:29.068693 #4807]  INFO -- default-centos-65: Compiling Cookbooks...
+I, [2015-06-15T17:50:29.069370 #4807]  INFO -- default-centos-65: Converging 0 resources
+I, [2015-06-15T17:50:29.132643 #4807]  INFO -- default-centos-65: 
+I, [2015-06-15T17:50:29.132816 #4807]  INFO -- default-centos-65: Running handlers:
+I, [2015-06-15T17:50:29.132881 #4807]  INFO -- default-centos-65: Running handlers complete
+I, [2015-06-15T17:50:29.134390 #4807]  INFO -- default-centos-65: Chef Client finished, 0/0 resources updated in 4.773853486 seconds
+I, [2015-06-15T17:50:30.557210 #4807]  INFO -- default-centos-65: Finished converging <default-centos-65> (0m35.33s).
+I, [2015-06-15T18:05:15.928144 #5166]  INFO -- default-centos-65: -----> Setting up <default-centos-65>...
+I, [2015-06-15T18:05:19.241308 #5166]  INFO -- default-centos-65: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+I, [2015-06-15T18:05:19.413615 #5166]  INFO -- default-centos-65: Successfully installed thor-0.19.0
+I, [2015-06-15T18:05:19.497528 #5166]  INFO -- default-centos-65: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
+I, [2015-06-15T18:05:19.581645 #5166]  INFO -- default-centos-65: Successfully installed busser-0.7.1
+I, [2015-06-15T18:05:19.581791 #5166]  INFO -- default-centos-65: 2 gems installed
+I, [2015-06-15T18:05:20.412698 #5166]  INFO -- default-centos-65: -----> Setting up Busser
+I, [2015-06-15T18:05:20.412880 #5166]  INFO -- default-centos-65: Creating BUSSER_ROOT in /tmp/busser
+I, [2015-06-15T18:05:20.414352 #5166]  INFO -- default-centos-65: Creating busser binstub
+I, [2015-06-15T18:05:27.240619 #5166]  INFO -- default-centos-65: Plugin serverspec installed (version 0.5.7)
+I, [2015-06-15T18:05:27.248248 #5166]  INFO -- default-centos-65: -----> Running postinstall for serverspec plugin
+I, [2015-06-15T18:05:28.604504 #5166]  INFO -- default-centos-65: Finished setting up <default-centos-65> (0m12.65s).
+I, [2015-06-15T18:05:28.604947 #5166]  INFO -- default-centos-65: -----> Verifying <default-centos-65>...
+I, [2015-06-15T18:05:29.692681 #5166]  INFO -- default-centos-65: Suite path directory /tmp/busser/suites does not exist, skipping.
+I, [2015-06-15T18:05:30.625716 #5166]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0664)
+I, [2015-06-15T18:05:33.368682 #5166]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/default_spec.rb (mode=0664)
+I, [2015-06-15T18:05:36.177078 #5166]  INFO -- default-centos-65: -----> Running serverspec test suite
+I, [2015-06-15T18:05:36.177597 #5166]  INFO -- default-centos-65: -----> Installing Serverspec..
+I, [2015-06-15T18:05:38.695793 #5166]  INFO -- default-centos-65: Fetching: net-ssh-2.9.2.gemFetching: net-ssh-2.9.2.gem (  9%)Fetching: net-ssh-2.9.2.gem ( 19%)Fetching: net-ssh-2.9.2.gem ( 28%)Fetching: net-ssh-2.9.2.gem ( 37%)Fetching: net-ssh-2.9.2.gem ( 46%)Fetching: net-ssh-2.9.2.gem ( 55%)Fetching: net-ssh-2.9.2.gem ( 65%)Fetching: net-ssh-2.9.2.gem ( 74%)Fetching: net-ssh-2.9.2.gem ( 83%)Fetching: net-ssh-2.9.2.gem ( 92%)Fetching: net-ssh-2.9.2.gem (100%)Fetching: net-ssh-2.9.2.gem (100%)
+I, [2015-06-15T18:05:39.159767 #5166]  INFO -- default-centos-65: Fetching: net-scp-1.2.1.gemFetching: net-scp-1.2.1.gem ( 48%)Fetching: net-scp-1.2.1.gem ( 98%)Fetching: net-scp-1.2.1.gem (100%)Fetching: net-scp-1.2.1.gem (100%)
+I, [2015-06-15T18:05:39.394260 #5166]  INFO -- default-centos-65: Fetching: specinfra-2.35.1.gemFetching: specinfra-2.35.1.gem ( 29%)Fetching: specinfra-2.35.1.gem ( 58%)Fetching: specinfra-2.35.1.gem ( 88%)Fetching: specinfra-2.35.1.gem (100%)Fetching: specinfra-2.35.1.gem (100%)
+I, [2015-06-15T18:05:39.916625 #5166]  INFO -- default-centos-65: Fetching: multi_json-1.11.1.gemFetching: multi_json-1.11.1.gem ( 64%)Fetching: multi_json-1.11.1.gem (100%)Fetching: multi_json-1.11.1.gem (100%)
+I, [2015-06-15T18:05:40.144276 #5166]  INFO -- default-centos-65: Fetching: diff-lcs-1.2.5.gemFetching: diff-lcs-1.2.5.gem ( 32%)Fetching: diff-lcs-1.2.5.gem ( 66%)Fetching: diff-lcs-1.2.5.gem ( 99%)Fetching: diff-lcs-1.2.5.gem (100%)Fetching: diff-lcs-1.2.5.gem (100%)
+I, [2015-06-15T18:05:40.405587 #5166]  INFO -- default-centos-65: Fetching: rspec-support-3.3.0.gemFetching: rspec-support-3.3.0.gem ( 55%)Fetching: rspec-support-3.3.0.gem (100%)Fetching: rspec-support-3.3.0.gem (100%)
+I, [2015-06-15T18:05:40.628212 #5166]  INFO -- default-centos-65: Fetching: rspec-expectations-3.3.0.gemFetching: rspec-expectations-3.3.0.gem ( 22%)Fetching: rspec-expectations-3.3.0.gem ( 44%)Fetching: rspec-expectations-3.3.0.gem ( 67%)Fetching: rspec-expectations-3.3.0.gem ( 89%)Fetching: rspec-expectations-3.3.0.gem (100%)Fetching: rspec-expectations-3.3.0.gem (100%)
+I, [2015-06-15T18:05:40.933277 #5166]  INFO -- default-centos-65: Fetching: rspec-core-3.3.0.gemFetching: rspec-core-3.3.0.gem ( 12%)Fetching: rspec-core-3.3.0.gem ( 24%)Fetching: rspec-core-3.3.0.gem ( 35%)Fetching: rspec-core-3.3.0.gem ( 47%)Fetching: rspec-core-3.3.0.gem ( 59%)Fetching: rspec-core-3.3.0.gem ( 71%)Fetching: rspec-core-3.3.0.gem ( 83%)Fetching: rspec-core-3.3.0.gem ( 94%)Fetching: rspec-core-3.3.0.gem (100%)Fetching: rspec-core-3.3.0.gem (100%)
+I, [2015-06-15T18:05:41.262564 #5166]  INFO -- default-centos-65: Fetching: rspec-its-1.2.0.gemFetching: rspec-its-1.2.0.gem (100%)Fetching: rspec-its-1.2.0.gem (100%)
+I, [2015-06-15T18:05:41.513341 #5166]  INFO -- default-centos-65: Fetching: rspec-mocks-3.3.0.gemFetching: rspec-mocks-3.3.0.gem ( 22%)Fetching: rspec-mocks-3.3.0.gem ( 44%)Fetching: rspec-mocks-3.3.0.gem ( 67%)Fetching: rspec-mocks-3.3.0.gem ( 89%)Fetching: rspec-mocks-3.3.0.gem (100%)Fetching: rspec-mocks-3.3.0.gem (100%)
+I, [2015-06-15T18:05:41.816794 #5166]  INFO -- default-centos-65: Fetching: rspec-3.3.0.gemFetching: rspec-3.3.0.gem (100%)Fetching: rspec-3.3.0.gem (100%)
+I, [2015-06-15T18:05:41.956618 #5166]  INFO -- default-centos-65: Fetching: serverspec-2.18.0.gemFetching: serverspec-2.18.0.gem ( 46%)Fetching: serverspec-2.18.0.gem ( 93%)Fetching: serverspec-2.18.0.gem (100%)Fetching: serverspec-2.18.0.gem (100%)
+I, [2015-06-15T18:05:42.159650 #5166]  INFO -- default-centos-65: -----> serverspec installed (version 2.18.0)
+I, [2015-06-15T18:05:42.509668 #5166]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-06-15T18:05:43.903629 #5166]  INFO -- default-centos-65: 
+I, [2015-06-15T18:05:43.903798 #5166]  INFO -- default-centos-65: web::default
+I, [2015-06-15T18:05:43.907551 #5166]  INFO -- default-centos-65: [32m  is awesome[0m
+I, [2015-06-15T18:05:43.907688 #5166]  INFO -- default-centos-65: 
+I, [2015-06-15T18:05:43.907749 #5166]  INFO -- default-centos-65: Finished in 0.00358 seconds (files took 1.2 seconds to load)
+I, [2015-06-15T18:05:43.907824 #5166]  INFO -- default-centos-65: [32m1 example, 0 failures[0m
+I, [2015-06-15T18:05:43.907884 #5166]  INFO -- default-centos-65: 
+I, [2015-06-15T18:05:44.103181 #5166]  INFO -- default-centos-65: Finished verifying <default-centos-65> (0m15.50s).
+I, [2015-06-15T18:22:53.078391 #5268]  INFO -- default-centos-65: -----> Verifying <default-centos-65>...
+I, [2015-06-15T18:22:54.106838 #5268]  INFO -- default-centos-65: Removing /tmp/busser/suites/serverspec
+I, [2015-06-15T18:22:54.988696 #5268]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0664)
+I, [2015-06-15T18:22:57.480580 #5268]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/default_spec.rb (mode=0664)
+I, [2015-06-15T18:23:00.110685 #5268]  INFO -- default-centos-65: -----> Running serverspec test suite
+I, [2015-06-15T18:23:00.463629 #5268]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-06-15T18:23:01.760624 #5268]  INFO -- default-centos-65: 
+I, [2015-06-15T18:23:01.760796 #5268]  INFO -- default-centos-65: web::default
+I, [2015-06-15T18:23:01.762342 #5268]  INFO -- default-centos-65: [32m  is awesome[0m
+I, [2015-06-15T18:23:01.763319 #5268]  INFO -- default-centos-65: [33m  runs the apache service (PENDING: Not yet implemented)[0m
+I, [2015-06-15T18:23:02.221641 #5268]  INFO -- default-centos-65: [31m  renders the web page (FAILED - 1)[0m
+I, [2015-06-15T18:23:02.223343 #5268]  INFO -- default-centos-65: [33m  is listening on port 80 (PENDING: Not yet implemented)[0m
+I, [2015-06-15T18:23:02.224388 #5268]  INFO -- default-centos-65: 
+I, [2015-06-15T18:23:02.224465 #5268]  INFO -- default-centos-65: Pending: (Failures listed here are expected and do not affect your suite's status)
+I, [2015-06-15T18:23:02.224520 #5268]  INFO -- default-centos-65: [33m
+I, [2015-06-15T18:23:02.224571 #5268]  INFO -- default-centos-65:   1) web::default runs the apache service[0m
+I, [2015-06-15T18:23:02.224620 #5268]  INFO -- default-centos-65:      [36m# Not yet implemented[0m
+I, [2015-06-15T18:23:02.224669 #5268]  INFO -- default-centos-65: [36m     # /tmp/busser/suites/serverspec/default_spec.rb:14
+I, [2015-06-15T18:23:02.224739 #5268]  INFO -- default-centos-65: [0m[33m
+I, [2015-06-15T18:23:02.224815 #5268]  INFO -- default-centos-65:   2) web::default is listening on port 80[0m
+I, [2015-06-15T18:23:02.224867 #5268]  INFO -- default-centos-65:      [36m# Not yet implemented[0m
+I, [2015-06-15T18:23:02.224916 #5268]  INFO -- default-centos-65: [36m     # /tmp/busser/suites/serverspec/default_spec.rb:20
+I, [2015-06-15T18:23:02.224964 #5268]  INFO -- default-centos-65: [0m
+I, [2015-06-15T18:23:02.227244 #5268]  INFO -- default-centos-65: 
+I, [2015-06-15T18:23:02.227337 #5268]  INFO -- default-centos-65: Failures:
+I, [2015-06-15T18:23:02.227396 #5268]  INFO -- default-centos-65: 
+I, [2015-06-15T18:23:02.227446 #5268]  INFO -- default-centos-65:   1) web::default renders the web page
+I, [2015-06-15T18:23:02.227496 #5268]  INFO -- default-centos-65:      [31mFailure/Error: expect(command('curl http://localhost').exit_status).to eq 0[0m
+I, [2015-06-15T18:23:02.227544 #5268]  INFO -- default-centos-65:      [31m  [0m
+I, [2015-06-15T18:23:02.227592 #5268]  INFO -- default-centos-65:      [31m  expected: 0[0m
+I, [2015-06-15T18:23:02.227642 #5268]  INFO -- default-centos-65:      [31m       got: 7[0m
+I, [2015-06-15T18:23:02.227689 #5268]  INFO -- default-centos-65:      [31m  [0m
+I, [2015-06-15T18:23:02.227737 #5268]  INFO -- default-centos-65:      [31m  (compared using ==)[0m
+I, [2015-06-15T18:23:02.227828 #5268]  INFO -- default-centos-65:      [36m# /tmp/busser/suites/serverspec/default_spec.rb:17:in `block (2 levels) in <top (required)>'[0m
+I, [2015-06-15T18:23:02.230227 #5268]  INFO -- default-centos-65: 
+I, [2015-06-15T18:23:02.230344 #5268]  INFO -- default-centos-65: Finished in 0.46363 seconds (files took 1.14 seconds to load)
+I, [2015-06-15T18:23:02.230400 #5268]  INFO -- default-centos-65: [31m4 examples, 1 failure, 2 pending[0m
+I, [2015-06-15T18:23:02.230448 #5268]  INFO -- default-centos-65: 
+I, [2015-06-15T18:23:02.230495 #5268]  INFO -- default-centos-65: Failed examples:
+I, [2015-06-15T18:23:02.230541 #5268]  INFO -- default-centos-65: 
+I, [2015-06-15T18:23:02.230589 #5268]  INFO -- default-centos-65: [31mrspec /tmp/busser/suites/serverspec/default_spec.rb:16[0m [36m# web::default renders the web page[0m
+I, [2015-06-15T18:23:02.230636 #5268]  INFO -- default-centos-65: 
+I, [2015-06-15T18:23:02.308206 #5268]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec failed
+I, [2015-06-15T18:23:02.324369 #5268]  INFO -- default-centos-65: !!!!!! Ruby Script [/tmp/busser/gems/gems/busser-serverspec-0.5.7/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/busser/suites/serverspec] exit code was 1
+E, [2015-06-15T18:23:02.385349 #5268] ERROR -- default-centos-65: Verify failed on instance <default-centos-65>.
+E, [2015-06-15T18:23:02.385613 #5268] ERROR -- default-centos-65: ------Exception-------
+E, [2015-06-15T18:23:02.385673 #5268] ERROR -- default-centos-65: Class: Kitchen::ActionFailed
+E, [2015-06-15T18:23:02.385719 #5268] ERROR -- default-centos-65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser test
+']
+E, [2015-06-15T18:23:02.385767 #5268] ERROR -- default-centos-65: ---Nested Exception---
+E, [2015-06-15T18:23:02.385868 #5268] ERROR -- default-centos-65: Class: Kitchen::SSHFailed
+E, [2015-06-15T18:23:02.385913 #5268] ERROR -- default-centos-65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser test
+']
+E, [2015-06-15T18:23:02.385957 #5268] ERROR -- default-centos-65: ------Backtrace-------
+E, [2015-06-15T18:23:02.386002 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-06-15T18:23:02.386073 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-06-15T18:23:02.386122 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:67:in `block in verify'
+E, [2015-06-15T18:23:02.386168 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-06-15T18:23:02.386212 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `new'
+E, [2015-06-15T18:23:02.386257 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `verify'
+E, [2015-06-15T18:23:02.386301 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-06-15T18:23:02.386346 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-06-15T18:23:02.386391 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-06-15T18:23:02.386475 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-06-15T18:23:02.386526 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-06-15T18:23:02.386571 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-06-15T18:23:02.386616 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-06-15T18:23:02.386681 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-06-15T18:23:02.386730 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:330:in `verify_action'
+E, [2015-06-15T18:23:02.386776 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-06-15T18:23:02.386872 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-06-15T18:23:02.386929 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-06-15T18:23:02.387001 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-06-15T18:23:02.387050 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-06-15T18:23:02.387095 #5268] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-06-15T18:23:02.387140 #5268] ERROR -- default-centos-65: ----------------------
+I, [2015-06-15T18:46:45.859751 #5356]  INFO -- default-centos-65: -----> Verifying <default-centos-65>...
+I, [2015-06-15T18:46:46.888857 #5356]  INFO -- default-centos-65: Removing /tmp/busser/suites/serverspec
+I, [2015-06-15T18:46:47.783600 #5356]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0664)
+I, [2015-06-15T18:46:50.391617 #5356]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/default_spec.rb (mode=0664)
+I, [2015-06-15T18:46:53.068676 #5356]  INFO -- default-centos-65: -----> Running serverspec test suite
+I, [2015-06-15T18:46:53.412661 #5356]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-06-15T18:46:54.703648 #5356]  INFO -- default-centos-65: 
+I, [2015-06-15T18:46:54.703826 #5356]  INFO -- default-centos-65: web::default
+I, [2015-06-15T18:46:54.705337 #5356]  INFO -- default-centos-65: [32m  is awesome[0m
+I, [2015-06-15T18:46:55.177618 #5356]  INFO -- default-centos-65: [31m  runs the apache service (FAILED - 1)[0m
+I, [2015-06-15T18:46:55.283285 #5356]  INFO -- default-centos-65: [31m  renders the web page (FAILED - 2)[0m
+I, [2015-06-15T18:46:55.366466 #5356]  INFO -- default-centos-65: [31m  is listening on port 80 (FAILED - 3)[0m
+I, [2015-06-15T18:46:55.415651 #5356]  INFO -- default-centos-65: 
+I, [2015-06-15T18:46:55.415800 #5356]  INFO -- default-centos-65: Failures:
+I, [2015-06-15T18:46:55.415860 #5356]  INFO -- default-centos-65: 
+I, [2015-06-15T18:46:55.415911 #5356]  INFO -- default-centos-65:   1) web::default runs the apache service
+I, [2015-06-15T18:46:55.415960 #5356]  INFO -- default-centos-65:      [31mFailure/Error: expect(service 'httpd').to be_running[0m
+I, [2015-06-15T18:46:55.416010 #5356]  INFO -- default-centos-65:      [31m  expected Service "httpd" to be running[0m
+I, [2015-06-15T18:46:55.416063 #5356]  INFO -- default-centos-65:      [36m# /tmp/busser/suites/serverspec/default_spec.rb:15:in `block (2 levels) in <top (required)>'[0m
+I, [2015-06-15T18:46:55.416160 #5356]  INFO -- default-centos-65: 
+I, [2015-06-15T18:46:55.416215 #5356]  INFO -- default-centos-65:   2) web::default renders the web page
+I, [2015-06-15T18:46:55.416264 #5356]  INFO -- default-centos-65:      [31mFailure/Error: expect(command('curl http://localhost').exit_status).to eq 0[0m
+I, [2015-06-15T18:46:55.416318 #5356]  INFO -- default-centos-65:      [31m  [0m
+I, [2015-06-15T18:46:55.416367 #5356]  INFO -- default-centos-65:      [31m  expected: 0[0m
+I, [2015-06-15T18:46:55.416416 #5356]  INFO -- default-centos-65:      [31m       got: 7[0m
+I, [2015-06-15T18:46:55.416464 #5356]  INFO -- default-centos-65:      [31m  [0m
+I, [2015-06-15T18:46:55.416512 #5356]  INFO -- default-centos-65:      [31m  (compared using ==)[0m
+I, [2015-06-15T18:46:55.416607 #5356]  INFO -- default-centos-65:      [36m# /tmp/busser/suites/serverspec/default_spec.rb:19:in `block (2 levels) in <top (required)>'[0m
+I, [2015-06-15T18:46:55.416679 #5356]  INFO -- default-centos-65: 
+I, [2015-06-15T18:46:55.416731 #5356]  INFO -- default-centos-65:   3) web::default is listening on port 80
+I, [2015-06-15T18:46:55.416795 #5356]  INFO -- default-centos-65:      [31mFailure/Error: expect(port 80).to be_listening[0m
+I, [2015-06-15T18:46:55.416849 #5356]  INFO -- default-centos-65:      [31m  expected Port "80" to be listening[0m
+I, [2015-06-15T18:46:55.416898 #5356]  INFO -- default-centos-65:      [36m# /tmp/busser/suites/serverspec/default_spec.rb:23:in `block (2 levels) in <top (required)>'[0m
+I, [2015-06-15T18:46:55.419299 #5356]  INFO -- default-centos-65: 
+I, [2015-06-15T18:46:55.419369 #5356]  INFO -- default-centos-65: Finished in 0.66398 seconds (files took 1.11 seconds to load)
+I, [2015-06-15T18:46:55.419422 #5356]  INFO -- default-centos-65: [31m4 examples, 3 failures[0m
+I, [2015-06-15T18:46:55.419470 #5356]  INFO -- default-centos-65: 
+I, [2015-06-15T18:46:55.419516 #5356]  INFO -- default-centos-65: Failed examples:
+I, [2015-06-15T18:46:55.419562 #5356]  INFO -- default-centos-65: 
+I, [2015-06-15T18:46:55.419610 #5356]  INFO -- default-centos-65: [31mrspec /tmp/busser/suites/serverspec/default_spec.rb:14[0m [36m# web::default runs the apache service[0m
+I, [2015-06-15T18:46:55.419681 #5356]  INFO -- default-centos-65: [31mrspec /tmp/busser/suites/serverspec/default_spec.rb:18[0m [36m# web::default renders the web page[0m
+I, [2015-06-15T18:46:55.419738 #5356]  INFO -- default-centos-65: [31mrspec /tmp/busser/suites/serverspec/default_spec.rb:22[0m [36m# web::default is listening on port 80[0m
+I, [2015-06-15T18:46:55.419805 #5356]  INFO -- default-centos-65: 
+I, [2015-06-15T18:46:55.548632 #5356]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec failed
+I, [2015-06-15T18:46:55.549065 #5356]  INFO -- default-centos-65: !!!!!! Ruby Script [/tmp/busser/gems/gems/busser-serverspec-0.5.7/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/busser/suites/serverspec] exit code was 1
+E, [2015-06-15T18:46:55.599329 #5356] ERROR -- default-centos-65: Verify failed on instance <default-centos-65>.
+E, [2015-06-15T18:46:55.599565 #5356] ERROR -- default-centos-65: ------Exception-------
+E, [2015-06-15T18:46:55.599624 #5356] ERROR -- default-centos-65: Class: Kitchen::ActionFailed
+E, [2015-06-15T18:46:55.599678 #5356] ERROR -- default-centos-65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser test
+']
+E, [2015-06-15T18:46:55.599737 #5356] ERROR -- default-centos-65: ---Nested Exception---
+E, [2015-06-15T18:46:55.599811 #5356] ERROR -- default-centos-65: Class: Kitchen::SSHFailed
+E, [2015-06-15T18:46:55.599861 #5356] ERROR -- default-centos-65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser test
+']
+E, [2015-06-15T18:46:55.599903 #5356] ERROR -- default-centos-65: ------Backtrace-------
+E, [2015-06-15T18:46:55.599944 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-06-15T18:46:55.599987 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-06-15T18:46:55.600053 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:67:in `block in verify'
+E, [2015-06-15T18:46:55.600099 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-06-15T18:46:55.600145 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `new'
+E, [2015-06-15T18:46:55.600189 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `verify'
+E, [2015-06-15T18:46:55.600232 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-06-15T18:46:55.600274 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-06-15T18:46:55.600316 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-06-15T18:46:55.600358 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-06-15T18:46:55.600422 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-06-15T18:46:55.600469 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-06-15T18:46:55.600512 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-06-15T18:46:55.600554 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-06-15T18:46:55.600597 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:330:in `verify_action'
+E, [2015-06-15T18:46:55.600639 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-06-15T18:46:55.600681 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-06-15T18:46:55.600722 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-06-15T18:46:55.600855 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-06-15T18:46:55.600929 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-06-15T18:46:55.600975 #5356] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-06-15T18:46:55.601018 #5356] ERROR -- default-centos-65: ----------------------
+I, [2015-06-15T19:02:50.755887 #5502]  INFO -- default-centos-65: -----> Converging <default-centos-65>...
+I, [2015-06-15T19:02:50.757200 #5502]  INFO -- default-centos-65: Preparing files for transfer
+I, [2015-06-15T19:02:50.757345 #5502]  INFO -- default-centos-65: Preparing dna.json
+I, [2015-06-15T19:02:50.757959 #5502]  INFO -- default-centos-65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-06-15T19:02:50.894490 #5502]  INFO -- default-centos-65: Removing non-cookbook files before transfer
+I, [2015-06-15T19:02:50.921267 #5502]  INFO -- default-centos-65: Preparing validation.pem
+I, [2015-06-15T19:02:50.921603 #5502]  INFO -- default-centos-65: Preparing client.rb
+I, [2015-06-15T19:02:51.161635 #5502]  INFO -- default-centos-65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-06-15T19:02:51.309895 #5502]  INFO -- default-centos-65: Transferring files to <default-centos-65>
+I, [2015-06-15T19:02:55.411610 #5502]  INFO -- default-centos-65: Starting Chef Client, version 12.3.0
+I, [2015-06-15T19:02:58.829606 #5502]  INFO -- default-centos-65: [2015-06-15T20:02:58+01:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-06-15T19:02:58.851453 #5502]  INFO -- default-centos-65: resolving cookbooks for run list: ["web::default"]
+I, [2015-06-15T19:02:58.934522 #5502]  INFO -- default-centos-65: Synchronizing Cookbooks:
+I, [2015-06-15T19:02:58.944243 #5502]  INFO -- default-centos-65:   - web
+I, [2015-06-15T19:02:58.945287 #5502]  INFO -- default-centos-65: Compiling Cookbooks...
+I, [2015-06-15T19:02:58.978342 #5502]  INFO -- default-centos-65: Converging 1 resources
+I, [2015-06-15T19:02:58.978441 #5502]  INFO -- default-centos-65: Recipe: web::default
+I, [2015-06-15T19:03:11.120639 #5502]  INFO -- default-centos-65:   * yum_package[httpd] action install
+I, [2015-06-15T19:03:11.120810 #5502]  INFO -- default-centos-65:     - install version 2.2.15-39.el6.centos of package httpd
+I, [2015-06-15T19:03:11.201633 #5502]  INFO -- default-centos-65: 
+I, [2015-06-15T19:03:11.201766 #5502]  INFO -- default-centos-65: Running handlers:
+I, [2015-06-15T19:03:11.201849 #5502]  INFO -- default-centos-65: Running handlers complete
+I, [2015-06-15T19:03:11.201901 #5502]  INFO -- default-centos-65: Chef Client finished, 1/1 resources updated in 15.8268601 seconds
+I, [2015-06-15T19:03:13.600742 #5502]  INFO -- default-centos-65: Finished converging <default-centos-65> (0m22.84s).
+I, [2015-06-15T19:04:06.967272 #5764]  INFO -- default-centos-65: -----> Setting up <default-centos-65>...
+I, [2015-06-15T19:04:08.924800 #5764]  INFO -- default-centos-65: -----> Setting up Busser
+I, [2015-06-15T19:04:08.925004 #5764]  INFO -- default-centos-65: Creating BUSSER_ROOT in /tmp/busser
+I, [2015-06-15T19:04:08.925081 #5764]  INFO -- default-centos-65: Creating busser binstub
+I, [2015-06-15T19:04:13.561683 #5764]  INFO -- default-centos-65: Plugin serverspec already installed
+I, [2015-06-15T19:04:13.646257 #5764]  INFO -- default-centos-65: Finished setting up <default-centos-65> (0m6.62s).
+I, [2015-06-15T19:04:13.646533 #5764]  INFO -- default-centos-65: -----> Verifying <default-centos-65>...
+I, [2015-06-15T19:04:14.724693 #5764]  INFO -- default-centos-65: Removing /tmp/busser/suites/serverspec
+I, [2015-06-15T19:04:15.630616 #5764]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0664)
+I, [2015-06-15T19:04:18.142641 #5764]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/default_spec.rb (mode=0664)
+I, [2015-06-15T19:04:20.771674 #5764]  INFO -- default-centos-65: -----> Running serverspec test suite
+I, [2015-06-15T19:04:21.103685 #5764]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-06-15T19:04:22.457646 #5764]  INFO -- default-centos-65: 
+I, [2015-06-15T19:04:22.457826 #5764]  INFO -- default-centos-65: web::default
+I, [2015-06-15T19:04:22.460221 #5764]  INFO -- default-centos-65: [32m  is awesome[0m
+I, [2015-06-15T19:04:22.976668 #5764]  INFO -- default-centos-65: [31m  runs the apache service (FAILED - 1)[0m
+I, [2015-06-15T19:04:23.114689 #5764]  INFO -- default-centos-65: [31m  renders the web page (FAILED - 2)[0m
+I, [2015-06-15T19:04:23.174569 #5764]  INFO -- default-centos-65: [31m  is listening on port 80 (FAILED - 3)[0m
+I, [2015-06-15T19:04:23.226829 #5764]  INFO -- default-centos-65: 
+I, [2015-06-15T19:04:23.226986 #5764]  INFO -- default-centos-65: Failures:
+I, [2015-06-15T19:04:23.227043 #5764]  INFO -- default-centos-65: 
+I, [2015-06-15T19:04:23.227096 #5764]  INFO -- default-centos-65:   1) web::default runs the apache service
+I, [2015-06-15T19:04:23.227177 #5764]  INFO -- default-centos-65:      [31mFailure/Error: expect(service 'httpd').to be_running[0m
+I, [2015-06-15T19:04:23.227233 #5764]  INFO -- default-centos-65:      [31m  expected Service "httpd" to be running[0m
+I, [2015-06-15T19:04:23.227284 #5764]  INFO -- default-centos-65:      [36m# /tmp/busser/suites/serverspec/default_spec.rb:15:in `block (2 levels) in <top (required)>'[0m
+I, [2015-06-15T19:04:23.227333 #5764]  INFO -- default-centos-65: 
+I, [2015-06-15T19:04:23.227383 #5764]  INFO -- default-centos-65:   2) web::default renders the web page
+I, [2015-06-15T19:04:23.227433 #5764]  INFO -- default-centos-65:      [31mFailure/Error: expect(command('curl http://localhost').exit_status).to eq 0[0m
+I, [2015-06-15T19:04:23.227484 #5764]  INFO -- default-centos-65:      [31m  [0m
+I, [2015-06-15T19:04:23.227539 #5764]  INFO -- default-centos-65:      [31m  expected: 0[0m
+I, [2015-06-15T19:04:23.227613 #5764]  INFO -- default-centos-65:      [31m       got: 7[0m
+I, [2015-06-15T19:04:23.227671 #5764]  INFO -- default-centos-65:      [31m  [0m
+I, [2015-06-15T19:04:23.227721 #5764]  INFO -- default-centos-65:      [31m  (compared using ==)[0m
+I, [2015-06-15T19:04:23.227787 #5764]  INFO -- default-centos-65:      [36m# /tmp/busser/suites/serverspec/default_spec.rb:19:in `block (2 levels) in <top (required)>'[0m
+I, [2015-06-15T19:04:23.227844 #5764]  INFO -- default-centos-65: 
+I, [2015-06-15T19:04:23.227895 #5764]  INFO -- default-centos-65:   3) web::default is listening on port 80
+I, [2015-06-15T19:04:23.227945 #5764]  INFO -- default-centos-65:      [31mFailure/Error: expect(port 80).to be_listening[0m
+I, [2015-06-15T19:04:23.228035 #5764]  INFO -- default-centos-65:      [31m  expected Port "80" to be listening[0m
+I, [2015-06-15T19:04:23.228088 #5764]  INFO -- default-centos-65:      [36m# /tmp/busser/suites/serverspec/default_spec.rb:23:in `block (2 levels) in <top (required)>'[0m
+I, [2015-06-15T19:04:23.228164 #5764]  INFO -- default-centos-65: 
+I, [2015-06-15T19:04:23.228218 #5764]  INFO -- default-centos-65: Finished in 0.71892 seconds (files took 1.16 seconds to load)
+I, [2015-06-15T19:04:23.228269 #5764]  INFO -- default-centos-65: [31m4 examples, 3 failures[0m
+I, [2015-06-15T19:04:23.228318 #5764]  INFO -- default-centos-65: 
+I, [2015-06-15T19:04:23.228366 #5764]  INFO -- default-centos-65: Failed examples:
+I, [2015-06-15T19:04:23.228416 #5764]  INFO -- default-centos-65: 
+I, [2015-06-15T19:04:23.228465 #5764]  INFO -- default-centos-65: [31mrspec /tmp/busser/suites/serverspec/default_spec.rb:14[0m [36m# web::default runs the apache service[0m
+I, [2015-06-15T19:04:23.228515 #5764]  INFO -- default-centos-65: [31mrspec /tmp/busser/suites/serverspec/default_spec.rb:18[0m [36m# web::default renders the web page[0m
+I, [2015-06-15T19:04:23.228566 #5764]  INFO -- default-centos-65: [31mrspec /tmp/busser/suites/serverspec/default_spec.rb:22[0m [36m# web::default is listening on port 80[0m
+I, [2015-06-15T19:04:23.258206 #5764]  INFO -- default-centos-65: 
+I, [2015-06-15T19:04:23.355350 #5764]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec failed
+I, [2015-06-15T19:04:23.358342 #5764]  INFO -- default-centos-65: !!!!!! Ruby Script [/tmp/busser/gems/gems/busser-serverspec-0.5.7/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/busser/suites/serverspec] exit code was 1
+E, [2015-06-15T19:04:23.420655 #5764] ERROR -- default-centos-65: Verify failed on instance <default-centos-65>.
+E, [2015-06-15T19:04:23.420954 #5764] ERROR -- default-centos-65: ------Exception-------
+E, [2015-06-15T19:04:23.421017 #5764] ERROR -- default-centos-65: Class: Kitchen::ActionFailed
+E, [2015-06-15T19:04:23.421064 #5764] ERROR -- default-centos-65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser test
+']
+E, [2015-06-15T19:04:23.421110 #5764] ERROR -- default-centos-65: ---Nested Exception---
+E, [2015-06-15T19:04:23.421155 #5764] ERROR -- default-centos-65: Class: Kitchen::SSHFailed
+E, [2015-06-15T19:04:23.421199 #5764] ERROR -- default-centos-65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser test
+']
+E, [2015-06-15T19:04:23.421244 #5764] ERROR -- default-centos-65: ------Backtrace-------
+E, [2015-06-15T19:04:23.421314 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-06-15T19:04:23.421400 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-06-15T19:04:23.421447 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:67:in `block in verify'
+E, [2015-06-15T19:04:23.421492 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-06-15T19:04:23.421537 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `new'
+E, [2015-06-15T19:04:23.421582 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `verify'
+E, [2015-06-15T19:04:23.421627 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-06-15T19:04:23.421672 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-06-15T19:04:23.421727 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-06-15T19:04:23.421852 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-06-15T19:04:23.421907 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-06-15T19:04:23.421952 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-06-15T19:04:23.421997 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-06-15T19:04:23.422041 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-06-15T19:04:23.422086 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:330:in `verify_action'
+E, [2015-06-15T19:04:23.422131 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-06-15T19:04:23.422175 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-06-15T19:04:23.422245 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-06-15T19:04:23.422311 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-06-15T19:04:23.422359 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-06-15T19:04:23.422404 #5764] ERROR -- default-centos-65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-06-15T19:04:23.422448 #5764] ERROR -- default-centos-65: ----------------------
+I, [2015-06-15T19:11:10.654197 #5873]  INFO -- default-centos-65: -----> Converging <default-centos-65>...
+I, [2015-06-15T19:11:10.655506 #5873]  INFO -- default-centos-65: Preparing files for transfer
+I, [2015-06-15T19:11:10.655645 #5873]  INFO -- default-centos-65: Preparing dna.json
+I, [2015-06-15T19:11:10.656264 #5873]  INFO -- default-centos-65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-06-15T19:11:10.802665 #5873]  INFO -- default-centos-65: Removing non-cookbook files before transfer
+I, [2015-06-15T19:11:10.805262 #5873]  INFO -- default-centos-65: Preparing validation.pem
+I, [2015-06-15T19:11:10.805638 #5873]  INFO -- default-centos-65: Preparing client.rb
+I, [2015-06-15T19:11:11.056126 #5873]  INFO -- default-centos-65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-06-15T19:11:11.201503 #5873]  INFO -- default-centos-65: Transferring files to <default-centos-65>
+I, [2015-06-15T19:11:15.295707 #5873]  INFO -- default-centos-65: Starting Chef Client, version 12.3.0
+I, [2015-06-15T19:11:18.734638 #5873]  INFO -- default-centos-65: [2015-06-15T20:11:18+01:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-06-15T19:11:18.755469 #5873]  INFO -- default-centos-65: resolving cookbooks for run list: ["web::default"]
+I, [2015-06-15T19:11:18.839689 #5873]  INFO -- default-centos-65: Synchronizing Cookbooks:
+I, [2015-06-15T19:11:18.849262 #5873]  INFO -- default-centos-65:   - web
+I, [2015-06-15T19:11:18.849340 #5873]  INFO -- default-centos-65: Compiling Cookbooks...
+I, [2015-06-15T19:11:18.884339 #5873]  INFO -- default-centos-65: Converging 2 resources
+I, [2015-06-15T19:11:18.884439 #5873]  INFO -- default-centos-65: Recipe: web::default
+I, [2015-06-15T19:11:22.471648 #5873]  INFO -- default-centos-65:  (up to date)
+I, [2015-06-15T19:11:22.955629 #5873]  INFO -- default-centos-65: 
+I, [2015-06-15T19:11:22.955762 #5873]  INFO -- default-centos-65:     - start service service[httpd]
+I, [2015-06-15T19:11:23.280595 #5873]  INFO -- default-centos-65: 
+I, [2015-06-15T19:11:23.282363 #5873]  INFO -- default-centos-65: 
+I, [2015-06-15T19:11:23.363626 #5873]  INFO -- default-centos-65: 
+I, [2015-06-15T19:11:23.363760 #5873]  INFO -- default-centos-65: Running handlers:
+I, [2015-06-15T19:11:23.363865 #5873]  INFO -- default-centos-65: Running handlers complete
+I, [2015-06-15T19:11:23.363925 #5873]  INFO -- default-centos-65: Chef Client finished, 2/3 resources updated in 8.138659114 seconds
+I, [2015-06-15T19:11:25.457239 #5873]  INFO -- default-centos-65: Finished converging <default-centos-65> (0m14.80s).
+I, [2015-06-15T19:11:28.397480 #6155]  INFO -- default-centos-65: -----> Setting up <default-centos-65>...
+I, [2015-06-15T19:11:30.278854 #6155]  INFO -- default-centos-65: -----> Setting up Busser
+I, [2015-06-15T19:11:30.279034 #6155]  INFO -- default-centos-65: Creating BUSSER_ROOT in /tmp/busser
+I, [2015-06-15T19:11:30.279126 #6155]  INFO -- default-centos-65: Creating busser binstub
+I, [2015-06-15T19:11:34.491652 #6155]  INFO -- default-centos-65: Plugin serverspec already installed
+I, [2015-06-15T19:11:34.545913 #6155]  INFO -- default-centos-65: Finished setting up <default-centos-65> (0m6.14s).
+I, [2015-06-15T19:11:34.546139 #6155]  INFO -- default-centos-65: -----> Verifying <default-centos-65>...
+I, [2015-06-15T19:11:35.608684 #6155]  INFO -- default-centos-65: Removing /tmp/busser/suites/serverspec
+I, [2015-06-15T19:11:36.468687 #6155]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0664)
+I, [2015-06-15T19:11:39.034650 #6155]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/default_spec.rb (mode=0664)
+I, [2015-06-15T19:11:41.786903 #6155]  INFO -- default-centos-65: -----> Running serverspec test suite
+I, [2015-06-15T19:11:42.131634 #6155]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-06-15T19:11:43.432638 #6155]  INFO -- default-centos-65: 
+I, [2015-06-15T19:11:43.432815 #6155]  INFO -- default-centos-65: web::default
+I, [2015-06-15T19:11:43.434420 #6155]  INFO -- default-centos-65: [32m  is awesome[0m
+I, [2015-06-15T19:11:43.828610 #6155]  INFO -- default-centos-65: [32m  runs the apache service[0m
+I, [2015-06-15T19:11:43.981626 #6155]  INFO -- default-centos-65: [32m  renders the web page[0m
+I, [2015-06-15T19:11:44.042672 #6155]  INFO -- default-centos-65: [32m  is listening on port 80[0m
+I, [2015-06-15T19:11:44.044378 #6155]  INFO -- default-centos-65: 
+I, [2015-06-15T19:11:44.044457 #6155]  INFO -- default-centos-65: Finished in 0.61092 seconds (files took 1.13 seconds to load)
+I, [2015-06-15T19:11:44.044516 #6155]  INFO -- default-centos-65: [32m4 examples, 0 failures[0m
+I, [2015-06-15T19:11:44.046211 #6155]  INFO -- default-centos-65: 
+I, [2015-06-15T19:11:44.236027 #6155]  INFO -- default-centos-65: Finished verifying <default-centos-65> (0m9.69s).
+I, [2015-06-15T19:13:31.759916 #6264]  INFO -- default-centos-65: -----> Converging <default-centos-65>...
+I, [2015-06-15T19:13:31.761178 #6264]  INFO -- default-centos-65: Preparing files for transfer
+I, [2015-06-15T19:13:31.761317 #6264]  INFO -- default-centos-65: Preparing dna.json
+I, [2015-06-15T19:13:31.761763 #6264]  INFO -- default-centos-65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-06-15T19:13:31.913696 #6264]  INFO -- default-centos-65: Removing non-cookbook files before transfer
+I, [2015-06-15T19:13:31.916291 #6264]  INFO -- default-centos-65: Preparing validation.pem
+I, [2015-06-15T19:13:31.916631 #6264]  INFO -- default-centos-65: Preparing client.rb
+I, [2015-06-15T19:13:32.178478 #6264]  INFO -- default-centos-65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-06-15T19:13:32.326177 #6264]  INFO -- default-centos-65: Transferring files to <default-centos-65>
+I, [2015-06-15T19:13:36.369652 #6264]  INFO -- default-centos-65: Starting Chef Client, version 12.3.0
+I, [2015-06-15T19:13:39.766598 #6264]  INFO -- default-centos-65: [2015-06-15T20:13:39+01:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-06-15T19:13:39.787275 #6264]  INFO -- default-centos-65: resolving cookbooks for run list: ["web::default"]
+I, [2015-06-15T19:13:39.882439 #6264]  INFO -- default-centos-65: Synchronizing Cookbooks:
+I, [2015-06-15T19:13:39.885229 #6264]  INFO -- default-centos-65:   - web
+I, [2015-06-15T19:13:39.887267 #6264]  INFO -- default-centos-65: Compiling Cookbooks...
+I, [2015-06-15T19:13:39.897259 #6264]  INFO -- default-centos-65: Converging 2 resources
+I, [2015-06-15T19:13:39.899263 #6264]  INFO -- default-centos-65: Recipe: web::default
+I, [2015-06-15T19:13:43.468601 #6264]  INFO -- default-centos-65:  (up to date)
+I, [2015-06-15T19:13:43.695578 #6264]  INFO -- default-centos-65:  (up to date)
+I, [2015-06-15T19:13:43.893585 #6264]  INFO -- default-centos-65:  (up to date)
+I, [2015-06-15T19:13:43.975581 #6264]  INFO -- default-centos-65: 
+I, [2015-06-15T19:13:43.975709 #6264]  INFO -- default-centos-65: Running handlers:
+I, [2015-06-15T19:13:43.975766 #6264]  INFO -- default-centos-65: Running handlers complete
+I, [2015-06-15T19:13:43.975844 #6264]  INFO -- default-centos-65: Chef Client finished, 0/3 resources updated in 7.668647448 seconds
+I, [2015-06-15T19:13:46.484554 #6264]  INFO -- default-centos-65: Finished converging <default-centos-65> (0m14.72s).
+I, [2015-06-15T19:13:49.344197 #6519]  INFO -- default-centos-65: -----> Setting up <default-centos-65>...
+I, [2015-06-15T19:13:51.225844 #6519]  INFO -- default-centos-65: -----> Setting up Busser
+I, [2015-06-15T19:13:51.226019 #6519]  INFO -- default-centos-65: Creating BUSSER_ROOT in /tmp/busser
+I, [2015-06-15T19:13:51.226112 #6519]  INFO -- default-centos-65: Creating busser binstub
+I, [2015-06-15T19:13:54.003703 #6519]  INFO -- default-centos-65: Plugin serverspec already installed
+I, [2015-06-15T19:13:54.058395 #6519]  INFO -- default-centos-65: Finished setting up <default-centos-65> (0m4.71s).
+I, [2015-06-15T19:13:54.058618 #6519]  INFO -- default-centos-65: -----> Verifying <default-centos-65>...
+I, [2015-06-15T19:13:55.137730 #6519]  INFO -- default-centos-65: Removing /tmp/busser/suites/serverspec
+I, [2015-06-15T19:13:56.022604 #6519]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0664)
+I, [2015-06-15T19:13:58.558618 #6519]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/default_spec.rb (mode=0664)
+I, [2015-06-15T19:14:01.268698 #6519]  INFO -- default-centos-65: -----> Running serverspec test suite
+I, [2015-06-15T19:14:01.659493 #6519]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-06-15T19:14:02.987641 #6519]  INFO -- default-centos-65: 
+I, [2015-06-15T19:14:02.987813 #6519]  INFO -- default-centos-65: web::default
+I, [2015-06-15T19:14:02.990208 #6519]  INFO -- default-centos-65: [32m  is awesome[0m
+I, [2015-06-15T19:14:03.377640 #6519]  INFO -- default-centos-65: [32m  runs the apache service[0m
+I, [2015-06-15T19:14:03.502569 #6519]  INFO -- default-centos-65: [32m  renders the web page[0m
+I, [2015-06-15T19:14:03.572614 #6519]  INFO -- default-centos-65: [32m  is listening on port 80[0m
+I, [2015-06-15T19:14:03.574341 #6519]  INFO -- default-centos-65: 
+I, [2015-06-15T19:14:03.574439 #6519]  INFO -- default-centos-65: Finished in 0.58509 seconds (files took 1.19 seconds to load)
+I, [2015-06-15T19:14:03.574501 #6519]  INFO -- default-centos-65: [32m4 examples, 0 failures[0m
+I, [2015-06-15T19:14:03.574585 #6519]  INFO -- default-centos-65: 
+I, [2015-06-15T19:14:03.762833 #6519]  INFO -- default-centos-65: Finished verifying <default-centos-65> (0m9.70s).
+I, [2015-06-15T19:14:56.796838 #6624]  INFO -- default-centos-65: -----> Destroying <default-centos-65>...
+I, [2015-06-15T19:14:56.900592 #6624]  INFO -- default-centos-65: [{
+I, [2015-06-15T19:14:56.900764 #6624]  INFO -- default-centos-65:     "Args": [
+I, [2015-06-15T19:14:56.900920 #6624]  INFO -- default-centos-65:  "-D",
+I, [2015-06-15T19:14:56.901011 #6624]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:14:56.901078 #6624]  INFO -- default-centos-65:  "UseDNS=no",
+I, [2015-06-15T19:14:56.901184 #6624]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:14:56.901244 #6624]  INFO -- default-centos-65:  "UsePAM=no",
+I, [2015-06-15T19:14:56.901322 #6624]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:14:56.901386 #6624]  INFO -- default-centos-65:  "PasswordAuthentication=yes",
+I, [2015-06-15T19:14:56.901443 #6624]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:14:56.901500 #6624]  INFO -- default-centos-65:  "UsePrivilegeSeparation=no",
+I, [2015-06-15T19:14:56.901578 #6624]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:14:56.901716 #6624]  INFO -- default-centos-65:  "PidFile=/tmp/sshd.pid"
+I, [2015-06-15T19:14:56.901783 #6624]  INFO -- default-centos-65:     ],
+I, [2015-06-15T19:14:56.901839 #6624]  INFO -- default-centos-65:     "Config": {
+I, [2015-06-15T19:14:56.901897 #6624]  INFO -- default-centos-65:  "AttachStderr": false,
+I, [2015-06-15T19:14:56.928687 #6624]  INFO -- default-centos-65:  "AttachStdin": false,
+I, [2015-06-15T19:14:56.928813 #6624]  INFO -- default-centos-65:  "AttachStdout": false,
+I, [2015-06-15T19:14:56.928882 #6624]  INFO -- default-centos-65:  "Cmd": [
+I, [2015-06-15T19:14:56.928940 #6624]  INFO -- default-centos-65:      "/usr/sbin/sshd",
+I, [2015-06-15T19:14:56.929016 #6624]  INFO -- default-centos-65:      "-D",
+I, [2015-06-15T19:14:56.929079 #6624]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:14:56.929136 #6624]  INFO -- default-centos-65:      "UseDNS=no",
+I, [2015-06-15T19:14:56.929191 #6624]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:14:56.929266 #6624]  INFO -- default-centos-65:      "UsePAM=no",
+I, [2015-06-15T19:14:56.929329 #6624]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:14:56.929386 #6624]  INFO -- default-centos-65:      "PasswordAuthentication=yes",
+I, [2015-06-15T19:14:56.929441 #6624]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:14:56.929517 #6624]  INFO -- default-centos-65:      "UsePrivilegeSeparation=no",
+I, [2015-06-15T19:14:56.929637 #6624]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:14:56.929695 #6624]  INFO -- default-centos-65:      "PidFile=/tmp/sshd.pid"
+I, [2015-06-15T19:14:56.929750 #6624]  INFO -- default-centos-65:  ],
+I, [2015-06-15T19:14:56.929863 #6624]  INFO -- default-centos-65:  "CpuShares": 0,
+I, [2015-06-15T19:14:56.929928 #6624]  INFO -- default-centos-65:  "Cpuset": "",
+I, [2015-06-15T19:14:56.929985 #6624]  INFO -- default-centos-65:  "Domainname": "",
+I, [2015-06-15T19:14:56.930041 #6624]  INFO -- default-centos-65:  "Entrypoint": null,
+I, [2015-06-15T19:14:56.930117 #6624]  INFO -- default-centos-65:  "Env": [
+I, [2015-06-15T19:14:56.930180 #6624]  INFO -- default-centos-65:      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+I, [2015-06-15T19:14:56.930237 #6624]  INFO -- default-centos-65:  ],
+I, [2015-06-15T19:14:56.930293 #6624]  INFO -- default-centos-65:  "ExposedPorts": {
+I, [2015-06-15T19:14:56.930370 #6624]  INFO -- default-centos-65:      "22/tcp": {}
+I, [2015-06-15T19:14:56.930431 #6624]  INFO -- default-centos-65:  },
+I, [2015-06-15T19:14:56.930488 #6624]  INFO -- default-centos-65:  "Hostname": "46b32ab65240",
+I, [2015-06-15T19:14:56.930544 #6624]  INFO -- default-centos-65:  "Image": "73bfbc1b344b",
+I, [2015-06-15T19:14:56.930625 #6624]  INFO -- default-centos-65:  "Memory": 0,
+I, [2015-06-15T19:14:56.930871 #6624]  INFO -- default-centos-65:  "MemorySwap": 0,
+I, [2015-06-15T19:14:56.930933 #6624]  INFO -- default-centos-65:  "NetworkDisabled": false,
+I, [2015-06-15T19:14:56.931009 #6624]  INFO -- default-centos-65:  "OnBuild": null,
+I, [2015-06-15T19:14:56.931074 #6624]  INFO -- default-centos-65:  "OpenStdin": false,
+I, [2015-06-15T19:14:56.931131 #6624]  INFO -- default-centos-65:  "PortSpecs": null,
+I, [2015-06-15T19:14:56.931193 #6624]  INFO -- default-centos-65:  "StdinOnce": false,
+I, [2015-06-15T19:14:56.931268 #6624]  INFO -- default-centos-65:  "Tty": false,
+I, [2015-06-15T19:14:56.931332 #6624]  INFO -- default-centos-65:  "User": "",
+I, [2015-06-15T19:14:56.931389 #6624]  INFO -- default-centos-65:  "Volumes": null,
+I, [2015-06-15T19:14:56.931445 #6624]  INFO -- default-centos-65:  "WorkingDir": ""
+I, [2015-06-15T19:14:56.931493 #6624]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:14:56.931560 #6624]  INFO -- default-centos-65:     "Created": "2015-06-15T17:47:32.578245813Z",
+I, [2015-06-15T19:14:56.931615 #6624]  INFO -- default-centos-65:     "Driver": "devicemapper",
+I, [2015-06-15T19:14:56.931663 #6624]  INFO -- default-centos-65:     "ExecDriver": "lxc-1.0.6",
+I, [2015-06-15T19:14:56.931711 #6624]  INFO -- default-centos-65:     "HostConfig": {
+I, [2015-06-15T19:14:56.931766 #6624]  INFO -- default-centos-65:  "Binds": null,
+I, [2015-06-15T19:14:56.932070 #6624]  INFO -- default-centos-65:  "CapAdd": null,
+I, [2015-06-15T19:14:56.932150 #6624]  INFO -- default-centos-65:  "CapDrop": null,
+I, [2015-06-15T19:14:56.932214 #6624]  INFO -- default-centos-65:  "ContainerIDFile": "",
+I, [2015-06-15T19:14:56.932284 #6624]  INFO -- default-centos-65:  "Devices": [],
+I, [2015-06-15T19:14:56.932342 #6624]  INFO -- default-centos-65:  "Dns": null,
+I, [2015-06-15T19:14:56.932419 #6624]  INFO -- default-centos-65:  "DnsSearch": null,
+I, [2015-06-15T19:14:56.932481 #6624]  INFO -- default-centos-65:  "Links": null,
+I, [2015-06-15T19:14:56.932537 #6624]  INFO -- default-centos-65:  "LxcConf": [],
+I, [2015-06-15T19:14:56.932593 #6624]  INFO -- default-centos-65:  "NetworkMode": "bridge",
+I, [2015-06-15T19:14:56.932672 #6624]  INFO -- default-centos-65:  "PortBindings": {
+I, [2015-06-15T19:14:56.932734 #6624]  INFO -- default-centos-65:      "22/tcp": [
+I, [2015-06-15T19:14:56.932883 #6624]  INFO -- default-centos-65:          {
+I, [2015-06-15T19:14:56.932944 #6624]  INFO -- default-centos-65:              "HostIp": "",
+I, [2015-06-15T19:14:56.933023 #6624]  INFO -- default-centos-65:              "HostPort": ""
+I, [2015-06-15T19:14:56.933085 #6624]  INFO -- default-centos-65:          }
+I, [2015-06-15T19:14:56.933155 #6624]  INFO -- default-centos-65:      ]
+I, [2015-06-15T19:14:56.933224 #6624]  INFO -- default-centos-65:  },
+I, [2015-06-15T19:14:56.933302 #6624]  INFO -- default-centos-65:  "Privileged": false,
+I, [2015-06-15T19:14:56.933364 #6624]  INFO -- default-centos-65:  "PublishAllPorts": false,
+I, [2015-06-15T19:14:56.933422 #6624]  INFO -- default-centos-65:  "RestartPolicy": {
+I, [2015-06-15T19:14:56.933478 #6624]  INFO -- default-centos-65:      "MaximumRetryCount": 0,
+I, [2015-06-15T19:14:56.933557 #6624]  INFO -- default-centos-65:      "Name": ""
+I, [2015-06-15T19:14:56.933618 #6624]  INFO -- default-centos-65:  },
+I, [2015-06-15T19:14:56.933674 #6624]  INFO -- default-centos-65:  "VolumesFrom": null
+I, [2015-06-15T19:14:56.933722 #6624]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:14:56.933787 #6624]  INFO -- default-centos-65:     "HostnamePath": "/var/lib/docker/containers/46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992/hostname",
+I, [2015-06-15T19:14:56.933866 #6624]  INFO -- default-centos-65:     "HostsPath": "/var/lib/docker/containers/46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992/hosts",
+I, [2015-06-15T19:14:56.933919 #6624]  INFO -- default-centos-65:     "Id": "46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992",
+I, [2015-06-15T19:14:56.934028 #6624]  INFO -- default-centos-65:     "Image": "73bfbc1b344b55e95e9970436a785c3bf6115c54ad766960277c8521fdae0fe7",
+I, [2015-06-15T19:14:56.934083 #6624]  INFO -- default-centos-65:     "MountLabel": "",
+I, [2015-06-15T19:14:56.934132 #6624]  INFO -- default-centos-65:     "Name": "/cocky_feynman",
+I, [2015-06-15T19:14:56.934180 #6624]  INFO -- default-centos-65:     "NetworkSettings": {
+I, [2015-06-15T19:14:56.934236 #6624]  INFO -- default-centos-65:  "Bridge": "docker0",
+I, [2015-06-15T19:14:56.934313 #6624]  INFO -- default-centos-65:  "Gateway": "172.17.42.1",
+I, [2015-06-15T19:14:56.934376 #6624]  INFO -- default-centos-65:  "IPAddress": "172.17.0.10",
+I, [2015-06-15T19:14:56.934433 #6624]  INFO -- default-centos-65:  "IPPrefixLen": 16,
+I, [2015-06-15T19:14:56.934489 #6624]  INFO -- default-centos-65:  "PortMapping": null,
+I, [2015-06-15T19:14:56.934568 #6624]  INFO -- default-centos-65:  "Ports": {
+I, [2015-06-15T19:14:56.934626 #6624]  INFO -- default-centos-65:      "22/tcp": [
+I, [2015-06-15T19:14:56.934683 #6624]  INFO -- default-centos-65:          {
+I, [2015-06-15T19:14:56.934739 #6624]  INFO -- default-centos-65:              "HostIp": "0.0.0.0",
+I, [2015-06-15T19:14:56.934837 #6624]  INFO -- default-centos-65:              "HostPort": "49153"
+I, [2015-06-15T19:14:56.934897 #6624]  INFO -- default-centos-65:          }
+I, [2015-06-15T19:14:56.934952 #6624]  INFO -- default-centos-65:      ]
+I, [2015-06-15T19:14:56.935026 #6624]  INFO -- default-centos-65:  }
+I, [2015-06-15T19:14:56.935081 #6624]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:14:56.935202 #6624]  INFO -- default-centos-65:     "Path": "/usr/sbin/sshd",
+I, [2015-06-15T19:14:56.935252 #6624]  INFO -- default-centos-65:     "ProcessLabel": "",
+I, [2015-06-15T19:14:56.935310 #6624]  INFO -- default-centos-65:     "ResolvConfPath": "/var/lib/docker/containers/46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992/resolv.conf",
+I, [2015-06-15T19:14:56.935360 #6624]  INFO -- default-centos-65:     "State": {
+I, [2015-06-15T19:14:56.935415 #6624]  INFO -- default-centos-65:  "ExitCode": 0,
+I, [2015-06-15T19:14:56.935497 #6624]  INFO -- default-centos-65:  "FinishedAt": "0001-01-01T00:00:00Z",
+I, [2015-06-15T19:14:56.935568 #6624]  INFO -- default-centos-65:  "Paused": false,
+I, [2015-06-15T19:14:56.935626 #6624]  INFO -- default-centos-65:  "Pid": 4719,
+I, [2015-06-15T19:14:56.935682 #6624]  INFO -- default-centos-65:  "Restarting": false,
+I, [2015-06-15T19:14:56.935758 #6624]  INFO -- default-centos-65:  "Running": true,
+I, [2015-06-15T19:14:56.935840 #6624]  INFO -- default-centos-65:  "StartedAt": "2015-06-15T17:47:33.66396396Z"
+I, [2015-06-15T19:14:56.935891 #6624]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:14:56.935937 #6624]  INFO -- default-centos-65:     "Volumes": {},
+I, [2015-06-15T19:14:56.935984 #6624]  INFO -- default-centos-65:     "VolumesRW": {}
+I, [2015-06-15T19:14:56.936029 #6624]  INFO -- default-centos-65: }
+I, [2015-06-15T19:14:57.272758 #6624]  INFO -- default-centos-65: 46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992
+I, [2015-06-15T19:15:02.001146 #6624]  INFO -- default-centos-65: 46b32ab652402b56e5ea647af62b7d4cf8931d58da15ea7f0ab10e74a4291992
+I, [2015-06-15T19:15:02.056106 #6624]  INFO -- default-centos-65: Finished destroying <default-centos-65> (0m5.25s).
+I, [2015-06-15T19:16:44.109033 #6736]  INFO -- default-centos-65: -----> Cleaning up any prior instances of <default-centos-65>
+I, [2015-06-15T19:16:44.133610 #6736]  INFO -- default-centos-65: -----> Destroying <default-centos-65>...
+I, [2015-06-15T19:16:44.135107 #6736]  INFO -- default-centos-65: Finished destroying <default-centos-65> (0m0.00s).
+I, [2015-06-15T19:16:44.135488 #6736]  INFO -- default-centos-65: -----> Testing <default-centos-65>
+I, [2015-06-15T19:16:44.135673 #6736]  INFO -- default-centos-65: -----> Creating <default-centos-65>...
+I, [2015-06-15T19:16:44.242107 #6736]  INFO -- default-centos-65: Sending build context to Docker daemon  2.56 kB
+I, [2015-06-15T19:16:44.242602 #6736]  INFO -- default-centos-65: Sending build context to Docker daemon 
+I, [2015-06-15T19:16:44.249157 #6736]  INFO -- default-centos-65: Step 0 : FROM centos:centos6
+I, [2015-06-15T19:16:44.249512 #6736]  INFO -- default-centos-65:  ---> 70441cac1ed5
+I, [2015-06-15T19:16:44.249836 #6736]  INFO -- default-centos-65: Step 1 : RUN yum clean all
+I, [2015-06-15T19:16:44.252731 #6736]  INFO -- default-centos-65:  ---> Using cache
+I, [2015-06-15T19:16:44.253200 #6736]  INFO -- default-centos-65:  ---> 05ff5704effa
+I, [2015-06-15T19:16:44.325652 #6736]  INFO -- default-centos-65: Step 2 : RUN yum install -y sudo openssh-server openssh-clients which curl
+I, [2015-06-15T19:16:44.326018 #6736]  INFO -- default-centos-65:  ---> Using cache
+I, [2015-06-15T19:16:44.326088 #6736]  INFO -- default-centos-65:  ---> 2599045cf4dc
+I, [2015-06-15T19:16:44.326141 #6736]  INFO -- default-centos-65: Step 3 : RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+I, [2015-06-15T19:16:44.326192 #6736]  INFO -- default-centos-65:  ---> Using cache
+I, [2015-06-15T19:16:44.326334 #6736]  INFO -- default-centos-65:  ---> 37b35ea0f419
+I, [2015-06-15T19:16:44.326387 #6736]  INFO -- default-centos-65: Step 4 : RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+I, [2015-06-15T19:16:44.326466 #6736]  INFO -- default-centos-65:  ---> Using cache
+I, [2015-06-15T19:16:44.326519 #6736]  INFO -- default-centos-65:  ---> e3def5222e49
+I, [2015-06-15T19:16:44.326570 #6736]  INFO -- default-centos-65: Step 5 : RUN useradd -d /home/kitchen -m -s /bin/bash kitchen
+I, [2015-06-15T19:16:44.326619 #6736]  INFO -- default-centos-65:  ---> Using cache
+I, [2015-06-15T19:16:44.326668 #6736]  INFO -- default-centos-65:  ---> 20210045054c
+I, [2015-06-15T19:16:44.326743 #6736]  INFO -- default-centos-65: Step 6 : RUN echo kitchen:kitchen | chpasswd
+I, [2015-06-15T19:16:44.326816 #6736]  INFO -- default-centos-65:  ---> Using cache
+I, [2015-06-15T19:16:44.326868 #6736]  INFO -- default-centos-65:  ---> fbbd0897574f
+I, [2015-06-15T19:16:44.326917 #6736]  INFO -- default-centos-65: Step 7 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+I, [2015-06-15T19:16:44.331262 #6736]  INFO -- default-centos-65:  ---> Using cache
+I, [2015-06-15T19:16:44.331750 #6736]  INFO -- default-centos-65:  ---> 5c6cbaa51b65
+I, [2015-06-15T19:16:44.332343 #6736]  INFO -- default-centos-65: Step 8 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/kitchen
+I, [2015-06-15T19:16:44.339033 #6736]  INFO -- default-centos-65:  ---> Using cache
+I, [2015-06-15T19:16:44.339534 #6736]  INFO -- default-centos-65:  ---> 73bfbc1b344b
+I, [2015-06-15T19:16:44.340213 #6736]  INFO -- default-centos-65: Successfully built 73bfbc1b344b
+I, [2015-06-15T19:16:44.670707 #6736]  INFO -- default-centos-65: c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26
+I, [2015-06-15T19:16:45.620407 #6736]  INFO -- default-centos-65: [{
+I, [2015-06-15T19:16:45.620629 #6736]  INFO -- default-centos-65:     "Args": [
+I, [2015-06-15T19:16:45.620827 #6736]  INFO -- default-centos-65:  "-D",
+I, [2015-06-15T19:16:45.620919 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:16:45.620983 #6736]  INFO -- default-centos-65:  "UseDNS=no",
+I, [2015-06-15T19:16:45.621038 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:16:45.621165 #6736]  INFO -- default-centos-65:  "UsePAM=no",
+I, [2015-06-15T19:16:45.621261 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:16:45.621325 #6736]  INFO -- default-centos-65:  "PasswordAuthentication=yes",
+I, [2015-06-15T19:16:45.621380 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:16:45.621435 #6736]  INFO -- default-centos-65:  "UsePrivilegeSeparation=no",
+I, [2015-06-15T19:16:45.621511 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:16:45.621572 #6736]  INFO -- default-centos-65:  "PidFile=/tmp/sshd.pid"
+I, [2015-06-15T19:16:45.621621 #6736]  INFO -- default-centos-65:     ],
+I, [2015-06-15T19:16:45.621669 #6736]  INFO -- default-centos-65:     "Config": {
+I, [2015-06-15T19:16:45.621727 #6736]  INFO -- default-centos-65:  "AttachStderr": false,
+I, [2015-06-15T19:16:45.621822 #6736]  INFO -- default-centos-65:  "AttachStdin": false,
+I, [2015-06-15T19:16:45.621888 #6736]  INFO -- default-centos-65:  "AttachStdout": false,
+I, [2015-06-15T19:16:45.621945 #6736]  INFO -- default-centos-65:  "Cmd": [
+I, [2015-06-15T19:16:45.622000 #6736]  INFO -- default-centos-65:      "/usr/sbin/sshd",
+I, [2015-06-15T19:16:45.622077 #6736]  INFO -- default-centos-65:      "-D",
+I, [2015-06-15T19:16:45.622138 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:16:45.622194 #6736]  INFO -- default-centos-65:      "UseDNS=no",
+I, [2015-06-15T19:16:45.622313 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:16:45.649458 #6736]  INFO -- default-centos-65:      "UsePAM=no",
+I, [2015-06-15T19:16:45.649551 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:16:45.649612 #6736]  INFO -- default-centos-65:      "PasswordAuthentication=yes",
+I, [2015-06-15T19:16:45.649668 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:16:45.649749 #6736]  INFO -- default-centos-65:      "UsePrivilegeSeparation=no",
+I, [2015-06-15T19:16:45.649842 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:16:45.649907 #6736]  INFO -- default-centos-65:      "PidFile=/tmp/sshd.pid"
+I, [2015-06-15T19:16:45.650006 #6736]  INFO -- default-centos-65:  ],
+I, [2015-06-15T19:16:45.650438 #6736]  INFO -- default-centos-65:  "CpuShares": 0,
+I, [2015-06-15T19:16:45.653213 #6736]  INFO -- default-centos-65:  "Cpuset": "",
+I, [2015-06-15T19:16:45.653288 #6736]  INFO -- default-centos-65:  "Domainname": "",
+I, [2015-06-15T19:16:45.653368 #6736]  INFO -- default-centos-65:  "Entrypoint": null,
+I, [2015-06-15T19:16:45.653433 #6736]  INFO -- default-centos-65:  "Env": [
+I, [2015-06-15T19:16:45.653500 #6736]  INFO -- default-centos-65:      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+I, [2015-06-15T19:16:45.653559 #6736]  INFO -- default-centos-65:  ],
+I, [2015-06-15T19:16:45.653636 #6736]  INFO -- default-centos-65:  "ExposedPorts": {
+I, [2015-06-15T19:16:45.653949 #6736]  INFO -- default-centos-65:      "22/tcp": {}
+I, [2015-06-15T19:16:45.654015 #6736]  INFO -- default-centos-65:  },
+I, [2015-06-15T19:16:45.654072 #6736]  INFO -- default-centos-65:  "Hostname": "c99cdb1682bf",
+I, [2015-06-15T19:16:45.654152 #6736]  INFO -- default-centos-65:  "Image": "73bfbc1b344b",
+I, [2015-06-15T19:16:45.654214 #6736]  INFO -- default-centos-65:  "Memory": 0,
+I, [2015-06-15T19:16:45.654270 #6736]  INFO -- default-centos-65:  "MemorySwap": 0,
+I, [2015-06-15T19:16:45.654327 #6736]  INFO -- default-centos-65:  "NetworkDisabled": false,
+I, [2015-06-15T19:16:45.654425 #6736]  INFO -- default-centos-65:  "OnBuild": null,
+I, [2015-06-15T19:16:45.654516 #6736]  INFO -- default-centos-65:  "OpenStdin": false,
+I, [2015-06-15T19:16:45.654576 #6736]  INFO -- default-centos-65:  "PortSpecs": null,
+I, [2015-06-15T19:16:45.654632 #6736]  INFO -- default-centos-65:  "StdinOnce": false,
+I, [2015-06-15T19:16:45.654712 #6736]  INFO -- default-centos-65:  "Tty": false,
+I, [2015-06-15T19:16:45.654791 #6736]  INFO -- default-centos-65:  "User": "",
+I, [2015-06-15T19:16:45.654857 #6736]  INFO -- default-centos-65:  "Volumes": null,
+I, [2015-06-15T19:16:45.654915 #6736]  INFO -- default-centos-65:  "WorkingDir": ""
+I, [2015-06-15T19:16:45.654987 #6736]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:16:45.655038 #6736]  INFO -- default-centos-65:     "Created": "2015-06-15T19:16:44.490709939Z",
+I, [2015-06-15T19:16:45.655154 #6736]  INFO -- default-centos-65:     "Driver": "devicemapper",
+I, [2015-06-15T19:16:45.655206 #6736]  INFO -- default-centos-65:     "ExecDriver": "lxc-1.0.6",
+I, [2015-06-15T19:16:45.655253 #6736]  INFO -- default-centos-65:     "HostConfig": {
+I, [2015-06-15T19:16:45.655308 #6736]  INFO -- default-centos-65:  "Binds": null,
+I, [2015-06-15T19:16:45.655365 #6736]  INFO -- default-centos-65:  "CapAdd": null,
+I, [2015-06-15T19:16:45.655446 #6736]  INFO -- default-centos-65:  "CapDrop": null,
+I, [2015-06-15T19:16:45.655506 #6736]  INFO -- default-centos-65:  "ContainerIDFile": "",
+I, [2015-06-15T19:16:45.655563 #6736]  INFO -- default-centos-65:  "Devices": [],
+I, [2015-06-15T19:16:45.655618 #6736]  INFO -- default-centos-65:  "Dns": null,
+I, [2015-06-15T19:16:45.655698 #6736]  INFO -- default-centos-65:  "DnsSearch": null,
+I, [2015-06-15T19:16:45.655756 #6736]  INFO -- default-centos-65:  "Links": null,
+I, [2015-06-15T19:16:45.655832 #6736]  INFO -- default-centos-65:  "LxcConf": [],
+I, [2015-06-15T19:16:45.655900 #6736]  INFO -- default-centos-65:  "NetworkMode": "bridge",
+I, [2015-06-15T19:16:45.655972 #6736]  INFO -- default-centos-65:  "PortBindings": {
+I, [2015-06-15T19:16:45.656029 #6736]  INFO -- default-centos-65:      "22/tcp": [
+I, [2015-06-15T19:16:45.656084 #6736]  INFO -- default-centos-65:          {
+I, [2015-06-15T19:16:45.656159 #6736]  INFO -- default-centos-65:              "HostIp": "",
+I, [2015-06-15T19:16:45.656274 #6736]  INFO -- default-centos-65:              "HostPort": ""
+I, [2015-06-15T19:16:45.656332 #6736]  INFO -- default-centos-65:          }
+I, [2015-06-15T19:16:45.656387 #6736]  INFO -- default-centos-65:      ]
+I, [2015-06-15T19:16:45.656461 #6736]  INFO -- default-centos-65:  },
+I, [2015-06-15T19:16:45.656524 #6736]  INFO -- default-centos-65:  "Privileged": false,
+I, [2015-06-15T19:16:45.656581 #6736]  INFO -- default-centos-65:  "PublishAllPorts": false,
+I, [2015-06-15T19:16:45.656637 #6736]  INFO -- default-centos-65:  "RestartPolicy": {
+I, [2015-06-15T19:16:45.656713 #6736]  INFO -- default-centos-65:      "MaximumRetryCount": 0,
+I, [2015-06-15T19:16:45.656789 #6736]  INFO -- default-centos-65:      "Name": ""
+I, [2015-06-15T19:16:45.656851 #6736]  INFO -- default-centos-65:  },
+I, [2015-06-15T19:16:45.656917 #6736]  INFO -- default-centos-65:  "VolumesFrom": null
+I, [2015-06-15T19:16:45.656967 #6736]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:16:45.657037 #6736]  INFO -- default-centos-65:     "HostnamePath": "/var/lib/docker/containers/c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26/hostname",
+I, [2015-06-15T19:16:45.657091 #6736]  INFO -- default-centos-65:     "HostsPath": "/var/lib/docker/containers/c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26/hosts",
+I, [2015-06-15T19:16:45.657156 #6736]  INFO -- default-centos-65:     "Id": "c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26",
+I, [2015-06-15T19:16:45.657215 #6736]  INFO -- default-centos-65:     "Image": "73bfbc1b344b55e95e9970436a785c3bf6115c54ad766960277c8521fdae0fe7",
+I, [2015-06-15T19:16:45.657264 #6736]  INFO -- default-centos-65:     "MountLabel": "",
+I, [2015-06-15T19:16:45.657311 #6736]  INFO -- default-centos-65:     "Name": "/angry_wozniak",
+I, [2015-06-15T19:16:45.657508 #6736]  INFO -- default-centos-65:     "NetworkSettings": {
+I, [2015-06-15T19:16:45.657592 #6736]  INFO -- default-centos-65:  "Bridge": "docker0",
+I, [2015-06-15T19:16:45.657656 #6736]  INFO -- default-centos-65:  "Gateway": "172.17.42.1",
+I, [2015-06-15T19:16:45.657713 #6736]  INFO -- default-centos-65:  "IPAddress": "172.17.0.11",
+I, [2015-06-15T19:16:45.657782 #6736]  INFO -- default-centos-65:  "IPPrefixLen": 16,
+I, [2015-06-15T19:16:45.657866 #6736]  INFO -- default-centos-65:  "PortMapping": null,
+I, [2015-06-15T19:16:45.657928 #6736]  INFO -- default-centos-65:  "Ports": {
+I, [2015-06-15T19:16:45.657984 #6736]  INFO -- default-centos-65:      "22/tcp": [
+I, [2015-06-15T19:16:45.658039 #6736]  INFO -- default-centos-65:          {
+I, [2015-06-15T19:16:45.658114 #6736]  INFO -- default-centos-65:              "HostIp": "0.0.0.0",
+I, [2015-06-15T19:16:45.658177 #6736]  INFO -- default-centos-65:              "HostPort": "49154"
+I, [2015-06-15T19:16:45.658234 #6736]  INFO -- default-centos-65:          }
+I, [2015-06-15T19:16:45.658288 #6736]  INFO -- default-centos-65:      ]
+I, [2015-06-15T19:16:45.658363 #6736]  INFO -- default-centos-65:  }
+I, [2015-06-15T19:16:45.658419 #6736]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:16:45.658551 #6736]  INFO -- default-centos-65:     "Path": "/usr/sbin/sshd",
+I, [2015-06-15T19:16:45.658760 #6736]  INFO -- default-centos-65:     "ProcessLabel": "",
+I, [2015-06-15T19:16:45.658835 #6736]  INFO -- default-centos-65:     "ResolvConfPath": "/var/lib/docker/containers/c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26/resolv.conf",
+I, [2015-06-15T19:16:45.658886 #6736]  INFO -- default-centos-65:     "State": {
+I, [2015-06-15T19:16:45.658945 #6736]  INFO -- default-centos-65:  "ExitCode": 0,
+I, [2015-06-15T19:16:45.659117 #6736]  INFO -- default-centos-65:  "FinishedAt": "0001-01-01T00:00:00Z",
+I, [2015-06-15T19:16:45.659182 #6736]  INFO -- default-centos-65:  "Paused": false,
+I, [2015-06-15T19:16:45.659240 #6736]  INFO -- default-centos-65:  "Pid": 6810,
+I, [2015-06-15T19:16:45.659296 #6736]  INFO -- default-centos-65:  "Restarting": false,
+I, [2015-06-15T19:16:45.659378 #6736]  INFO -- default-centos-65:  "Running": true,
+I, [2015-06-15T19:16:45.659444 #6736]  INFO -- default-centos-65:  "StartedAt": "2015-06-15T19:16:45.265912994Z"
+I, [2015-06-15T19:16:45.659493 #6736]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:16:45.659540 #6736]  INFO -- default-centos-65:     "Volumes": {},
+I, [2015-06-15T19:16:45.659587 #6736]  INFO -- default-centos-65:     "VolumesRW": {}
+I, [2015-06-15T19:16:45.659632 #6736]  INFO -- default-centos-65: }
+I, [2015-06-15T19:16:45.764227 #6736]  INFO -- default-centos-65: Finished creating <default-centos-65> (0m1.63s).
+I, [2015-06-15T19:16:45.764515 #6736]  INFO -- default-centos-65: -----> Converging <default-centos-65>...
+I, [2015-06-15T19:16:45.767928 #6736]  INFO -- default-centos-65: Preparing files for transfer
+I, [2015-06-15T19:16:45.768092 #6736]  INFO -- default-centos-65: Preparing dna.json
+I, [2015-06-15T19:16:45.768693 #6736]  INFO -- default-centos-65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-06-15T19:16:45.996318 #6736]  INFO -- default-centos-65: Removing non-cookbook files before transfer
+I, [2015-06-15T19:16:45.998885 #6736]  INFO -- default-centos-65: Preparing validation.pem
+I, [2015-06-15T19:16:45.999269 #6736]  INFO -- default-centos-65: Preparing client.rb
+I, [2015-06-15T19:16:46.251620 #6736]  INFO -- default-centos-65: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-06-15T19:16:46.251753 #6736]  INFO -- default-centos-65: downloading https://www.chef.io/chef/install.sh
+I, [2015-06-15T19:16:46.251836 #6736]  INFO -- default-centos-65:   to file /tmp/install.sh
+I, [2015-06-15T19:16:46.251888 #6736]  INFO -- default-centos-65: trying curl...
+I, [2015-06-15T19:16:46.495614 #6736]  INFO -- default-centos-65:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+I, [2015-06-15T19:16:46.495789 #6736]  INFO -- default-centos-65:                           Dload  Upload   Total   Spent    Left  Speed
+I, [2015-06-15T19:16:46.508197 #6736]  INFO -- default-centos-65: 100 18716  100 18716    0     0  97129      0 --:--:-- --:--:-- --:--:-- 1405k
+I, [2015-06-15T19:16:46.668722 #6736]  INFO -- default-centos-65: Downloading Chef  for el...
+I, [2015-06-15T19:16:46.670359 #6736]  INFO -- default-centos-65: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
+I, [2015-06-15T19:16:46.670433 #6736]  INFO -- default-centos-65:   to file /tmp/install.sh.20/metadata.txt
+I, [2015-06-15T19:16:46.670544 #6736]  INFO -- default-centos-65: trying curl...
+I, [2015-06-15T19:16:46.893689 #6736]  INFO -- default-centos-65: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.3.0-1.el6.x86_64.rpm
+I, [2015-06-15T19:16:46.893851 #6736]  INFO -- default-centos-65: md5	c19fefcb3d033107e9fbdb3839312584
+I, [2015-06-15T19:16:46.893911 #6736]  INFO -- default-centos-65: sha256	4b7c846a9ad93564cc203a5ac99890431f7d6ad159c424aa89827fd772c9881d
+I, [2015-06-15T19:16:46.905233 #6736]  INFO -- default-centos-65: downloaded metadata file looks valid...
+I, [2015-06-15T19:16:46.966599 #6736]  INFO -- default-centos-65: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.3.0-1.el6.x86_64.rpm
+I, [2015-06-15T19:16:46.966734 #6736]  INFO -- default-centos-65:   to file /tmp/install.sh.20/chef-12.3.0-1.el6.x86_64.rpm
+I, [2015-06-15T19:16:46.966822 #6736]  INFO -- default-centos-65: trying curl...
+I, [2015-06-15T19:16:49.228639 #6736]  INFO -- default-centos-65: Comparing checksum with sha256sum...
+I, [2015-06-15T19:16:50.249693 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:16:50.249869 #6736]  INFO -- default-centos-65: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-06-15T19:16:50.249943 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:16:50.250013 #6736]  INFO -- default-centos-65: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-06-15T19:16:50.250066 #6736]  INFO -- default-centos-65: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-06-15T19:16:50.250118 #6736]  INFO -- default-centos-65: be upgraded without warning on new releases, even to new major releases.
+I, [2015-06-15T19:16:50.250169 #6736]  INFO -- default-centos-65: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-06-15T19:16:50.250327 #6736]  INFO -- default-centos-65: CI/CD environments.
+I, [2015-06-15T19:16:50.250381 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:16:50.250432 #6736]  INFO -- default-centos-65: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-06-15T19:16:50.250481 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:16:50.250556 #6736]  INFO -- default-centos-65: Installing Chef 
+I, [2015-06-15T19:16:50.250627 #6736]  INFO -- default-centos-65: installing with rpm...
+I, [2015-06-15T19:16:50.440670 #6736]  INFO -- default-centos-65: warning: /tmp/install.sh.20/chef-12.3.0-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-06-15T19:16:51.134511 #6736]  INFO -- default-centos-65: Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)#########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+I, [2015-06-15T19:17:03.556848 #6736]  INFO -- default-centos-65:    1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)########################################### ( 99%)########################################### [100%]
+I, [2015-06-15T19:17:06.533685 #6736]  INFO -- default-centos-65: Thank you for installing Chef!
+I, [2015-06-15T19:17:06.759420 #6736]  INFO -- default-centos-65: Transferring files to <default-centos-65>
+I, [2015-06-15T19:17:11.214643 #6736]  INFO -- default-centos-65: Starting Chef Client, version 12.3.0
+I, [2015-06-15T19:17:14.767616 #6736]  INFO -- default-centos-65: Creating a new client identity for default-centos-65 using the validator key.
+I, [2015-06-15T19:17:14.902650 #6736]  INFO -- default-centos-65: [2015-06-15T20:17:14+01:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-06-15T19:17:14.908254 #6736]  INFO -- default-centos-65: [2015-06-15T20:17:14+01:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-06-15T19:17:14.955282 #6736]  INFO -- default-centos-65: resolving cookbooks for run list: ["web::default"]
+I, [2015-06-15T19:17:14.955558 #6736]  INFO -- default-centos-65: [2015-06-15T20:17:14+01:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-06-15T19:17:15.001484 #6736]  INFO -- default-centos-65: Synchronizing Cookbooks:
+I, [2015-06-15T19:17:15.039365 #6736]  INFO -- default-centos-65:   - web
+I, [2015-06-15T19:17:15.040323 #6736]  INFO -- default-centos-65: Compiling Cookbooks...
+I, [2015-06-15T19:17:15.049219 #6736]  INFO -- default-centos-65: Converging 2 resources
+I, [2015-06-15T19:17:15.051229 #6736]  INFO -- default-centos-65: Recipe: web::default
+I, [2015-06-15T19:17:27.155597 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:17:27.155752 #6736]  INFO -- default-centos-65:     - install version 2.2.15-39.el6.centos of package httpd
+I, [2015-06-15T19:17:27.661724 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:17:27.663423 #6736]  INFO -- default-centos-65: - start service service[httpd]
+I, [2015-06-15T19:17:27.969726 #6736]  INFO -- default-centos-65:   * service[httpd] action enable
+I, [2015-06-15T19:17:27.971360 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:17:28.082673 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:17:28.082834 #6736]  INFO -- default-centos-65: Running handlers:
+I, [2015-06-15T19:17:28.082896 #6736]  INFO -- default-centos-65: Running handlers complete
+I, [2015-06-15T19:17:28.082949 #6736]  INFO -- default-centos-65: Chef Client finished, 3/3 resources updated in 16.99212752 seconds
+I, [2015-06-15T19:17:29.335739 #6736]  INFO -- default-centos-65: Finished converging <default-centos-65> (0m43.57s).
+I, [2015-06-15T19:17:29.338203 #6736]  INFO -- default-centos-65: -----> Setting up <default-centos-65>...
+I, [2015-06-15T19:17:32.784227 #6736]  INFO -- default-centos-65: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+I, [2015-06-15T19:17:33.028588 #6736]  INFO -- default-centos-65: Successfully installed thor-0.19.0
+I, [2015-06-15T19:17:33.119191 #6736]  INFO -- default-centos-65: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
+I, [2015-06-15T19:17:33.205437 #6736]  INFO -- default-centos-65: Successfully installed busser-0.7.1
+I, [2015-06-15T19:17:33.206331 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:17:34.071716 #6736]  INFO -- default-centos-65: -----> Setting up Busser
+I, [2015-06-15T19:17:34.071894 #6736]  INFO -- default-centos-65: Creating BUSSER_ROOT in /tmp/busser
+I, [2015-06-15T19:17:34.071965 #6736]  INFO -- default-centos-65: Creating busser binstub
+I, [2015-06-15T19:17:40.947716 #6736]  INFO -- default-centos-65: Plugin serverspec installed (version 0.5.7)
+I, [2015-06-15T19:17:40.956228 #6736]  INFO -- default-centos-65: -----> Running postinstall for serverspec plugin
+I, [2015-06-15T19:17:42.019034 #6736]  INFO -- default-centos-65: Finished setting up <default-centos-65> (0m12.68s).
+I, [2015-06-15T19:17:42.019303 #6736]  INFO -- default-centos-65: -----> Verifying <default-centos-65>...
+I, [2015-06-15T19:17:43.069756 #6736]  INFO -- default-centos-65: Suite path directory /tmp/busser/suites does not exist, skipping.
+I, [2015-06-15T19:17:43.960625 #6736]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0664)
+I, [2015-06-15T19:17:46.597648 #6736]  INFO -- default-centos-65: Uploading /tmp/busser/suites/serverspec/default_spec.rb (mode=0664)
+I, [2015-06-15T19:17:49.289882 #6736]  INFO -- default-centos-65: -----> Running serverspec test suite
+I, [2015-06-15T19:17:49.290419 #6736]  INFO -- default-centos-65: -----> Installing Serverspec..
+I, [2015-06-15T19:17:51.862255 #6736]  INFO -- default-centos-65: Fetching: net-ssh-2.9.2.gemFetching: net-ssh-2.9.2.gem (  9%)Fetching: net-ssh-2.9.2.gem ( 19%)Fetching: net-ssh-2.9.2.gem ( 28%)Fetching: net-ssh-2.9.2.gem ( 37%)Fetching: net-ssh-2.9.2.gem ( 46%)Fetching: net-ssh-2.9.2.gem ( 55%)Fetching: net-ssh-2.9.2.gem ( 65%)Fetching: net-ssh-2.9.2.gem ( 74%)Fetching: net-ssh-2.9.2.gem ( 83%)Fetching: net-ssh-2.9.2.gem ( 92%)Fetching: net-ssh-2.9.2.gem (100%)Fetching: net-ssh-2.9.2.gem (100%)
+I, [2015-06-15T19:17:52.289233 #6736]  INFO -- default-centos-65: Fetching: net-scp-1.2.1.gemFetching: net-scp-1.2.1.gem ( 48%)Fetching: net-scp-1.2.1.gem ( 98%)Fetching: net-scp-1.2.1.gem (100%)Fetching: net-scp-1.2.1.gem (100%)
+I, [2015-06-15T19:17:52.492756 #6736]  INFO -- default-centos-65: Fetching: specinfra-2.35.1.gemFetching: specinfra-2.35.1.gem ( 29%)Fetching: specinfra-2.35.1.gem ( 58%)Fetching: specinfra-2.35.1.gem ( 88%)Fetching: specinfra-2.35.1.gem (100%)Fetching: specinfra-2.35.1.gem (100%)
+I, [2015-06-15T19:17:52.999581 #6736]  INFO -- default-centos-65: Fetching: multi_json-1.11.1.gemFetching: multi_json-1.11.1.gem ( 64%)Fetching: multi_json-1.11.1.gem (100%)Fetching: multi_json-1.11.1.gem (100%)
+I, [2015-06-15T19:17:53.204574 #6736]  INFO -- default-centos-65: Fetching: diff-lcs-1.2.5.gemFetching: diff-lcs-1.2.5.gem ( 32%)Fetching: diff-lcs-1.2.5.gem ( 66%)Fetching: diff-lcs-1.2.5.gem ( 99%)Fetching: diff-lcs-1.2.5.gem (100%)Fetching: diff-lcs-1.2.5.gem (100%)
+I, [2015-06-15T19:17:53.449564 #6736]  INFO -- default-centos-65: Fetching: rspec-support-3.3.0.gemFetching: rspec-support-3.3.0.gem ( 55%)Fetching: rspec-support-3.3.0.gem (100%)Fetching: rspec-support-3.3.0.gem (100%)
+I, [2015-06-15T19:17:53.682235 #6736]  INFO -- default-centos-65: Fetching: rspec-expectations-3.3.0.gemFetching: rspec-expectations-3.3.0.gem ( 22%)Fetching: rspec-expectations-3.3.0.gem ( 44%)Fetching: rspec-expectations-3.3.0.gem ( 67%)Fetching: rspec-expectations-3.3.0.gem ( 89%)Fetching: rspec-expectations-3.3.0.gem (100%)Fetching: rspec-expectations-3.3.0.gem (100%)
+I, [2015-06-15T19:17:53.945247 #6736]  INFO -- default-centos-65: Fetching: rspec-core-3.3.0.gemFetching: rspec-core-3.3.0.gem ( 12%)Fetching: rspec-core-3.3.0.gem ( 24%)Fetching: rspec-core-3.3.0.gem ( 35%)Fetching: rspec-core-3.3.0.gem ( 47%)Fetching: rspec-core-3.3.0.gem ( 59%)Fetching: rspec-core-3.3.0.gem ( 71%)Fetching: rspec-core-3.3.0.gem ( 83%)Fetching: rspec-core-3.3.0.gem ( 94%)Fetching: rspec-core-3.3.0.gem (100%)Fetching: rspec-core-3.3.0.gem (100%)
+I, [2015-06-15T19:17:54.226547 #6736]  INFO -- default-centos-65: Fetching: rspec-its-1.2.0.gemFetching: rspec-its-1.2.0.gem (100%)Fetching: rspec-its-1.2.0.gem (100%)
+I, [2015-06-15T19:17:54.471402 #6736]  INFO -- default-centos-65: Fetching: rspec-mocks-3.3.0.gemFetching: rspec-mocks-3.3.0.gem ( 22%)Fetching: rspec-mocks-3.3.0.gem ( 44%)Fetching: rspec-mocks-3.3.0.gem ( 67%)Fetching: rspec-mocks-3.3.0.gem ( 89%)Fetching: rspec-mocks-3.3.0.gem (100%)Fetching: rspec-mocks-3.3.0.gem (100%)
+I, [2015-06-15T19:17:54.727535 #6736]  INFO -- default-centos-65: Fetching: rspec-3.3.0.gemFetching: rspec-3.3.0.gem (100%)Fetching: rspec-3.3.0.gem (100%)
+I, [2015-06-15T19:17:54.836230 #6736]  INFO -- default-centos-65: Fetching: serverspec-2.18.0.gemFetching: serverspec-2.18.0.gem ( 46%)Fetching: serverspec-2.18.0.gem ( 93%)Fetching: serverspec-2.18.0.gem (100%)Fetching: serverspec-2.18.0.gem (100%)
+I, [2015-06-15T19:17:55.029617 #6736]  INFO -- default-centos-65: -----> serverspec installed (version 2.18.0)
+I, [2015-06-15T19:17:55.371804 #6736]  INFO -- default-centos-65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.3.0/lib:/tmp/busser/gems/gems/rspec-core-3.3.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-06-15T19:17:56.717654 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:17:56.717823 #6736]  INFO -- default-centos-65: web::default
+I, [2015-06-15T19:17:56.719360 #6736]  INFO -- default-centos-65: [32m  is awesome[0m
+I, [2015-06-15T19:17:57.111629 #6736]  INFO -- default-centos-65: [32m  runs the apache service[0m
+I, [2015-06-15T19:17:57.246578 #6736]  INFO -- default-centos-65: [32m  renders the web page[0m
+I, [2015-06-15T19:17:57.304587 #6736]  INFO -- default-centos-65: [32m  is listening on port 80[0m
+I, [2015-06-15T19:17:57.307301 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:17:57.307376 #6736]  INFO -- default-centos-65: Finished in 0.58968 seconds (files took 1.18 seconds to load)
+I, [2015-06-15T19:17:57.307430 #6736]  INFO -- default-centos-65: [32m4 examples, 0 failures[0m
+I, [2015-06-15T19:17:57.307479 #6736]  INFO -- default-centos-65: 
+I, [2015-06-15T19:17:57.546272 #6736]  INFO -- default-centos-65: Finished verifying <default-centos-65> (0m15.52s).
+I, [2015-06-15T19:17:57.549258 #6736]  INFO -- default-centos-65: -----> Destroying <default-centos-65>...
+I, [2015-06-15T19:17:57.697259 #6736]  INFO -- default-centos-65: [{
+I, [2015-06-15T19:17:57.697501 #6736]  INFO -- default-centos-65:     "Args": [
+I, [2015-06-15T19:17:57.697597 #6736]  INFO -- default-centos-65:  "-D",
+I, [2015-06-15T19:17:57.697662 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:17:57.697721 #6736]  INFO -- default-centos-65:  "UseDNS=no",
+I, [2015-06-15T19:17:57.697779 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:17:57.697862 #6736]  INFO -- default-centos-65:  "UsePAM=no",
+I, [2015-06-15T19:17:57.697922 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:17:57.697982 #6736]  INFO -- default-centos-65:  "PasswordAuthentication=yes",
+I, [2015-06-15T19:17:57.698041 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:17:57.698100 #6736]  INFO -- default-centos-65:  "UsePrivilegeSeparation=no",
+I, [2015-06-15T19:17:57.698162 #6736]  INFO -- default-centos-65:  "-o",
+I, [2015-06-15T19:17:57.698221 #6736]  INFO -- default-centos-65:  "PidFile=/tmp/sshd.pid"
+I, [2015-06-15T19:17:57.698271 #6736]  INFO -- default-centos-65:     ],
+I, [2015-06-15T19:17:57.698320 #6736]  INFO -- default-centos-65:     "Config": {
+I, [2015-06-15T19:17:57.698467 #6736]  INFO -- default-centos-65:  "AttachStderr": false,
+I, [2015-06-15T19:17:57.698545 #6736]  INFO -- default-centos-65:  "AttachStdin": false,
+I, [2015-06-15T19:17:57.698606 #6736]  INFO -- default-centos-65:  "AttachStdout": false,
+I, [2015-06-15T19:17:57.698663 #6736]  INFO -- default-centos-65:  "Cmd": [
+I, [2015-06-15T19:17:57.698720 #6736]  INFO -- default-centos-65:      "/usr/sbin/sshd",
+I, [2015-06-15T19:17:57.698797 #6736]  INFO -- default-centos-65:      "-D",
+I, [2015-06-15T19:17:57.698861 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:17:57.698920 #6736]  INFO -- default-centos-65:      "UseDNS=no",
+I, [2015-06-15T19:17:57.698977 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:17:57.699035 #6736]  INFO -- default-centos-65:      "UsePAM=no",
+I, [2015-06-15T19:17:57.699092 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:17:57.699151 #6736]  INFO -- default-centos-65:      "PasswordAuthentication=yes",
+I, [2015-06-15T19:17:57.699209 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:17:57.699267 #6736]  INFO -- default-centos-65:      "UsePrivilegeSeparation=no",
+I, [2015-06-15T19:17:57.699325 #6736]  INFO -- default-centos-65:      "-o",
+I, [2015-06-15T19:17:57.699383 #6736]  INFO -- default-centos-65:      "PidFile=/tmp/sshd.pid"
+I, [2015-06-15T19:17:57.699592 #6736]  INFO -- default-centos-65:  ],
+I, [2015-06-15T19:17:57.699653 #6736]  INFO -- default-centos-65:  "CpuShares": 0,
+I, [2015-06-15T19:17:57.699710 #6736]  INFO -- default-centos-65:  "Cpuset": "",
+I, [2015-06-15T19:17:57.699782 #6736]  INFO -- default-centos-65:  "Domainname": "",
+I, [2015-06-15T19:17:57.699849 #6736]  INFO -- default-centos-65:  "Entrypoint": null,
+I, [2015-06-15T19:17:57.699908 #6736]  INFO -- default-centos-65:  "Env": [
+I, [2015-06-15T19:17:57.699966 #6736]  INFO -- default-centos-65:      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+I, [2015-06-15T19:17:57.700026 #6736]  INFO -- default-centos-65:  ],
+I, [2015-06-15T19:17:57.700085 #6736]  INFO -- default-centos-65:  "ExposedPorts": {
+I, [2015-06-15T19:17:57.700144 #6736]  INFO -- default-centos-65:      "22/tcp": {}
+I, [2015-06-15T19:17:57.700203 #6736]  INFO -- default-centos-65:  },
+I, [2015-06-15T19:17:57.700261 #6736]  INFO -- default-centos-65:  "Hostname": "c99cdb1682bf",
+I, [2015-06-15T19:17:57.700321 #6736]  INFO -- default-centos-65:  "Image": "73bfbc1b344b",
+I, [2015-06-15T19:17:57.700380 #6736]  INFO -- default-centos-65:  "Memory": 0,
+I, [2015-06-15T19:17:57.700438 #6736]  INFO -- default-centos-65:  "MemorySwap": 0,
+I, [2015-06-15T19:17:57.700497 #6736]  INFO -- default-centos-65:  "NetworkDisabled": false,
+I, [2015-06-15T19:17:57.700733 #6736]  INFO -- default-centos-65:  "OnBuild": null,
+I, [2015-06-15T19:17:57.704190 #6736]  INFO -- default-centos-65:  "OpenStdin": false,
+I, [2015-06-15T19:17:57.704267 #6736]  INFO -- default-centos-65:  "PortSpecs": null,
+I, [2015-06-15T19:17:57.704329 #6736]  INFO -- default-centos-65:  "StdinOnce": false,
+I, [2015-06-15T19:17:57.704387 #6736]  INFO -- default-centos-65:  "Tty": false,
+I, [2015-06-15T19:17:57.704446 #6736]  INFO -- default-centos-65:  "User": "",
+I, [2015-06-15T19:17:57.704505 #6736]  INFO -- default-centos-65:  "Volumes": null,
+I, [2015-06-15T19:17:57.704564 #6736]  INFO -- default-centos-65:  "WorkingDir": ""
+I, [2015-06-15T19:17:57.704614 #6736]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:17:57.704664 #6736]  INFO -- default-centos-65:     "Created": "2015-06-15T19:16:44.490709939Z",
+I, [2015-06-15T19:17:57.704714 #6736]  INFO -- default-centos-65:     "Driver": "devicemapper",
+I, [2015-06-15T19:17:57.704764 #6736]  INFO -- default-centos-65:     "ExecDriver": "lxc-1.0.6",
+I, [2015-06-15T19:17:57.704851 #6736]  INFO -- default-centos-65:     "HostConfig": {
+I, [2015-06-15T19:17:57.704911 #6736]  INFO -- default-centos-65:  "Binds": null,
+I, [2015-06-15T19:17:57.704969 #6736]  INFO -- default-centos-65:  "CapAdd": null,
+I, [2015-06-15T19:17:57.705117 #6736]  INFO -- default-centos-65:  "CapDrop": null,
+I, [2015-06-15T19:17:57.705181 #6736]  INFO -- default-centos-65:  "ContainerIDFile": "",
+I, [2015-06-15T19:17:57.705251 #6736]  INFO -- default-centos-65:  "Devices": [],
+I, [2015-06-15T19:17:57.705310 #6736]  INFO -- default-centos-65:  "Dns": null,
+I, [2015-06-15T19:17:57.705368 #6736]  INFO -- default-centos-65:  "DnsSearch": null,
+I, [2015-06-15T19:17:57.705426 #6736]  INFO -- default-centos-65:  "Links": null,
+I, [2015-06-15T19:17:57.705484 #6736]  INFO -- default-centos-65:  "LxcConf": [],
+I, [2015-06-15T19:17:57.705547 #6736]  INFO -- default-centos-65:  "NetworkMode": "bridge",
+I, [2015-06-15T19:17:57.705606 #6736]  INFO -- default-centos-65:  "PortBindings": {
+I, [2015-06-15T19:17:57.705665 #6736]  INFO -- default-centos-65:      "22/tcp": [
+I, [2015-06-15T19:17:57.705723 #6736]  INFO -- default-centos-65:          {
+I, [2015-06-15T19:17:57.705913 #6736]  INFO -- default-centos-65:              "HostIp": "",
+I, [2015-06-15T19:17:57.705984 #6736]  INFO -- default-centos-65:              "HostPort": ""
+I, [2015-06-15T19:17:57.706043 #6736]  INFO -- default-centos-65:          }
+I, [2015-06-15T19:17:57.706100 #6736]  INFO -- default-centos-65:      ]
+I, [2015-06-15T19:17:57.706161 #6736]  INFO -- default-centos-65:  },
+I, [2015-06-15T19:17:57.706219 #6736]  INFO -- default-centos-65:  "Privileged": false,
+I, [2015-06-15T19:17:57.706277 #6736]  INFO -- default-centos-65:  "PublishAllPorts": false,
+I, [2015-06-15T19:17:57.706334 #6736]  INFO -- default-centos-65:  "RestartPolicy": {
+I, [2015-06-15T19:17:57.706391 #6736]  INFO -- default-centos-65:      "MaximumRetryCount": 0,
+I, [2015-06-15T19:17:57.706448 #6736]  INFO -- default-centos-65:      "Name": ""
+I, [2015-06-15T19:17:57.706504 #6736]  INFO -- default-centos-65:  },
+I, [2015-06-15T19:17:57.706560 #6736]  INFO -- default-centos-65:  "VolumesFrom": null
+I, [2015-06-15T19:17:57.706609 #6736]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:17:57.706657 #6736]  INFO -- default-centos-65:     "HostnamePath": "/var/lib/docker/containers/c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26/hostname",
+I, [2015-06-15T19:17:57.706709 #6736]  INFO -- default-centos-65:     "HostsPath": "/var/lib/docker/containers/c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26/hosts",
+I, [2015-06-15T19:17:57.706760 #6736]  INFO -- default-centos-65:     "Id": "c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26",
+I, [2015-06-15T19:17:57.706833 #6736]  INFO -- default-centos-65:     "Image": "73bfbc1b344b55e95e9970436a785c3bf6115c54ad766960277c8521fdae0fe7",
+I, [2015-06-15T19:17:57.706884 #6736]  INFO -- default-centos-65:     "MountLabel": "",
+I, [2015-06-15T19:17:57.707035 #6736]  INFO -- default-centos-65:     "Name": "/angry_wozniak",
+I, [2015-06-15T19:17:57.707091 #6736]  INFO -- default-centos-65:     "NetworkSettings": {
+I, [2015-06-15T19:17:57.707149 #6736]  INFO -- default-centos-65:  "Bridge": "docker0",
+I, [2015-06-15T19:17:57.707205 #6736]  INFO -- default-centos-65:  "Gateway": "172.17.42.1",
+I, [2015-06-15T19:17:57.707263 #6736]  INFO -- default-centos-65:  "IPAddress": "172.17.0.11",
+I, [2015-06-15T19:17:57.707320 #6736]  INFO -- default-centos-65:  "IPPrefixLen": 16,
+I, [2015-06-15T19:17:57.707377 #6736]  INFO -- default-centos-65:  "PortMapping": null,
+I, [2015-06-15T19:17:57.707434 #6736]  INFO -- default-centos-65:  "Ports": {
+I, [2015-06-15T19:17:57.707491 #6736]  INFO -- default-centos-65:      "22/tcp": [
+I, [2015-06-15T19:17:57.707564 #6736]  INFO -- default-centos-65:          {
+I, [2015-06-15T19:17:57.707651 #6736]  INFO -- default-centos-65:              "HostIp": "0.0.0.0",
+I, [2015-06-15T19:17:57.707714 #6736]  INFO -- default-centos-65:              "HostPort": "49154"
+I, [2015-06-15T19:17:57.707792 #6736]  INFO -- default-centos-65:          }
+I, [2015-06-15T19:17:57.707856 #6736]  INFO -- default-centos-65:      ]
+I, [2015-06-15T19:17:57.707913 #6736]  INFO -- default-centos-65:  }
+I, [2015-06-15T19:17:57.707962 #6736]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:17:57.708011 #6736]  INFO -- default-centos-65:     "Path": "/usr/sbin/sshd",
+I, [2015-06-15T19:17:57.708071 #6736]  INFO -- default-centos-65:     "ProcessLabel": "",
+I, [2015-06-15T19:17:57.708223 #6736]  INFO -- default-centos-65:     "ResolvConfPath": "/var/lib/docker/containers/c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26/resolv.conf",
+I, [2015-06-15T19:17:57.708275 #6736]  INFO -- default-centos-65:     "State": {
+I, [2015-06-15T19:17:57.708332 #6736]  INFO -- default-centos-65:  "ExitCode": 0,
+I, [2015-06-15T19:17:57.708389 #6736]  INFO -- default-centos-65:  "FinishedAt": "0001-01-01T00:00:00Z",
+I, [2015-06-15T19:17:57.708446 #6736]  INFO -- default-centos-65:  "Paused": false,
+I, [2015-06-15T19:17:57.708504 #6736]  INFO -- default-centos-65:  "Pid": 6810,
+I, [2015-06-15T19:17:57.708561 #6736]  INFO -- default-centos-65:  "Restarting": false,
+I, [2015-06-15T19:17:57.708618 #6736]  INFO -- default-centos-65:  "Running": true,
+I, [2015-06-15T19:17:57.708675 #6736]  INFO -- default-centos-65:  "StartedAt": "2015-06-15T19:16:45.265912994Z"
+I, [2015-06-15T19:17:57.708725 #6736]  INFO -- default-centos-65:     },
+I, [2015-06-15T19:17:57.708795 #6736]  INFO -- default-centos-65:     "Volumes": {},
+I, [2015-06-15T19:17:57.708851 #6736]  INFO -- default-centos-65:     "VolumesRW": {}
+I, [2015-06-15T19:17:57.708900 #6736]  INFO -- default-centos-65: }
+I, [2015-06-15T19:17:58.182380 #6736]  INFO -- default-centos-65: c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26
+I, [2015-06-15T19:18:04.719532 #6736]  INFO -- default-centos-65: c99cdb1682bf5a2f8373307335c17b628839fbd15a4191b9d2a2950d0b914b26
+I, [2015-06-15T19:18:04.746293 #6736]  INFO -- default-centos-65: Finished destroying <default-centos-65> (0m7.17s).
+I, [2015-06-15T19:18:04.747138 #6736]  INFO -- default-centos-65: Finished testing <default-centos-65> (1m20.64s).
