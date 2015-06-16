@@ -21,6 +21,8 @@ This repository includes all of the slides and code that we used and generated d
 * [Chef Community Summit](http://summit.chef.io)
 * [Chef Docs](http://docs.chef.io)
 * [Food Fight Show Podcast](http://foodfightshow.org)
+* [Foodcritic](http://www.foodcritic.io/)
+* [Better Serverspec documentation](http://burtlo.github.io/serverspec.github.io/resource_types.html)
 
 ## Nathen
 
