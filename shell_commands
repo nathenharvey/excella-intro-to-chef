@@ -1,0 +1,31 @@
+Some interesting shell commands that were used:
+
+ohai
+ohai platform
+ohai memory
+ohai memory/swap
+
+kitchen list
+kitchen create
+kitchen converge
+kitchen login
+kitchen verify
+kitchen destroy
+kitchen test
+
+rspec spec
+
+foodcritic .
+foodcritic . -f any
+
+rubocop .
+rubocop . --auto-gen-config
+echo "inherit_from: .rubocop_todo.yml" >> .rubocop.yml
+rubocop . -a
+
+chef generate cookbook web
+chef generate cookbook motd
+chef generate template . motd
+chef generate attribute . default
+
+sudo chef-client -z -r "recipe[motd::default]"
