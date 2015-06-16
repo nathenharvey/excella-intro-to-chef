@@ -14,6 +14,14 @@ This repository includes all of the slides and code that we used and generated d
   * `foodcritic . -f any`
   * `rubocop .`
 
+## Interesting Links
+
+* [DevOpsDays DC Conference](http://devopsdaysdc.org) - includes link to video recordings
+* [DevOpsDC Meetup](http://www.meetup.com/DevOpsDC/)
+* [Chef Community Summit](http://summit.chef.io)
+* [Chef Docs](http://docs.chef.io)
+* [Food Fight Show Podcast](http://foodfightshow.org)
+
 ## Nathen
 
 [@nathenharvey](https://twitter.com/nathenharvey)
