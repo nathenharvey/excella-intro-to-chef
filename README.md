@@ -16,6 +16,7 @@ This repository includes all of the slides and code that we used and generated d
 
 ## Interesting Links
 
+* [DC Tech Slack Channel](http://dctechslack.herokuapp.com/)
 * [DevOpsDays DC Conference](http://devopsdaysdc.org) - includes link to video recordings
 * [DevOpsDC Meetup](http://www.meetup.com/DevOpsDC/)
 * [Chef Community Summit](http://summit.chef.io)
